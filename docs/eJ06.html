@@ -13073,16 +13073,16 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="6.-Representing-data-as-tables">6. Representing data as tables<a class="anchor-link" href="#6.-Representing-data-as-tables">&#182;</a></h1><p>In this lecture we demonstrate:</p>
+<h1 id="6.-Prezantimi-i-t&#235;-dh&#235;nave-si-tabela">6. Prezantimi i t&#235; dh&#235;nave si tabela<a class="anchor-link" href="#6.-Prezantimi-i-t&#235;-dh&#235;nave-si-tabela">&#182;</a></h1><p>Në këtë mësim do demostrojmë:</p>
 <ol>
-<li>how to represent tables using lists;</li>
-<li>how to represent tables using a more efficient model provided by the <em>pandas</em> library;</li>
-<li>how to visualize data represented as tables; and</li>
-<li>how to read tables from local files and remote resources.</li>
+<li>si të përfaqësohen tabelat duke përdorur listat;</li>
+<li>si të përfaqësohen tabela duke përdorur një model më të efektshëm të siguruar nga libraria  <em>pandas</em>;</li>
+<li>si të vizualizohen të dhënat e paraqitura si tabela; </li>
+<li>si të lexoni tabela nga skedarët lokalë dhe burimet e largëta.</li>
 </ol>
 
 </div>
@@ -13091,7 +13091,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.1.-Representing-tables-by-lists">6.1. Representing tables by lists<a class="anchor-link" href="#6.1.-Representing-tables-by-lists">&#182;</a></h2><p>The most efficient way to organize large amounts of data is to put them in a table. For example, this table contains some basic facts about a group of students:</p>
+<h2 id="6.1.-Prezantimi-i-tabelave-me-lista">6.1. Prezantimi i tabelave me lista<a class="anchor-link" href="#6.1.-Prezantimi-i-tabelave-me-lista">&#182;</a></h2><p>Mënyra më efikase për të organizuar sasi të mëdha të të dhënave është t'i vendosni ato në një tabelë. Për shembull, kjo tabelë përmban disa fakte themelore për një grup studentësh:</p>
 <table>
 <thead><tr>
 <th><strong>Name</strong></th>
@@ -13181,7 +13181,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>We shall represent each row in this table as a list, and then put all the these lists into a new list:</p>
+<p>Ne do ta përfaqësojmë secilën rresht në këtë tabelë si listë, dhe pastaj t'i vendosim të gjitha këto lista në një listë të re:</p>
 
 </div>
 </div>
@@ -13212,7 +13212,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can now easily retrieve the information about any student in the group. For example, to see the information about Ethan we simply type <code>students[4]</code> (<em>Important! The first element of the list in indexed by 0, so Ethan's list has index 4</em>):</p>
+<p>Tani mund të marrim me lehtësi informacionin për çdo student në grup. Për shembull, për të parë informacionin në lidhje me Ethan, ne thjesht shkruajmë <code>students [4]</code> (<em>important!  Elementi i parë i listës në indeksuar nga 0, kështu që lista e Ethan ka indeksin 4</em>):</p>
 
 </div>
 </div>
@@ -13253,7 +13253,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On the other hand, this way of representing tables in inconvenient because it is not easy to work with the columns of the table. For example, if we wanted to compute the average height of the students in the group we would have to write a program:</p>
+<p>Nga ana tjetër, kjo mënyrë e përfaqësimit të tabelave është e  papërshtatshme sepse nuk është e lehtë të punosh me kolonat e tabelës. Për shembull, nëse do të donim të llogaritnim lartësinë mesatare të studentëve në grup, do të na duhej të shkruanim një program:</p>
 
 </div>
 </div>
@@ -13297,13 +13297,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This how the code does the job:</p>
-<ul>
-<li>we first initialize the variable <code>sum</code> to 0 (eventually it will contain the sum of the heights of the students);</li>
-<li>the code then loops through each student in the group and adds its height to <code>sum</code> (the height of a student is the numer at the index 4 of the list);</li>
-<li>finally, we compute the average.</li>
-</ul>
-<p>This is not hard but also not very convenient. We need a more flexible data structure.</p>
+<p>Kodi funksionon kështu:</p>
+<p><em>së pari inicializojmë shumën e ndryshueshme në 0 (përfundimisht ajo do të përmbajë shumën e lartësive të studentëve);</em>kodi më pas vendos secilin student në grup dhe shton lartësinë e tij në shumë (lartësia e një studenti është numri në indeksin 4 të listës);
+<em>në fund, ne llogarisim mesataren.</em>Kjo nuk është e vështirë, por gjithashtu nuk është shumë e përshtatshme. Ne kemi nevojë për një strukturë më fleksibël të të dhënave.</p>
 
 </div>
 </div>
@@ -13311,7 +13307,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.2.-pandas,-DataFrame-and-working-with-the-columns-of-the-table">6.2. <em>pandas</em>, <em>DataFrame</em> and working with the columns of the table<a class="anchor-link" href="#6.2.-pandas,-DataFrame-and-working-with-the-columns-of-the-table">&#182;</a></h2><p>The <em>pandas</em> library has been developed with efficient manupulation of tables in mind. Let's import the library and give it a nickname:</p>
+<h2 id="6.2.-pandas,-DataFrame-dhe-puna-me-kolonat-n&#235;-tabel&#235;">6.2. <em>pandas</em>, <em>DataFrame</em> dhe puna me kolonat n&#235; tabel&#235;<a class="anchor-link" href="#6.2.-pandas,-DataFrame-dhe-puna-me-kolonat-n&#235;-tabel&#235;">&#182;</a></h2><p>Libraria <em>pandas</em> është zhvilluar me një manipulim efikas të tabelave në mendje. Le ta importojmë librarinë dhe t'i japim një nofkë:</p>
 
 </div>
 </div>
@@ -13332,7 +13328,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This library provides a powerful data structure called <em>DataFrame</em>. Let us start by converting the data on the group of students into a DataFrame:</p>
+<p>Kjo librari jep një strukturë të dhënash të fuqishme të quajtur  <em>DataFrame</em>. Le të fillojmë duke shndërruar të dhënat për grupin e studentëve në një DataFrame:</p>
 
 </div>
 </div>
@@ -13353,7 +13349,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This command simply rearranges the data from the list <code>students</code> into a DataFrame. Let's see what a DataFrame looks like:</p>
+<p>Kjo komandë thjesht rregullon të dhënat nga lista <code>students</code> në një DataFrame. Le të shohim si duket një DataFrame:</p>
 
 </div>
 </div>
@@ -13509,7 +13505,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>All the information is there, arranged in a neat table. To make the table more readable we shall name the columns of the table using the option <code>columns</code>:</p>
+<p>Të gjitha informacionet janë atje, të rregulluara në një tabelë të rregullt. Për ta bërë tabelën më të lexueshme do t'i emërtojmë kolonat e tabelës duke përdorur opsionin <code>columns</code>:</p>
 
 </div>
 </div>
@@ -13666,7 +13662,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that each column has its name we can access the individual colums like this:</p>
+<p>Tani që secila kolonë ka emrin e vet, ne mund të aksesojmë kolonat individuale si kjo:</p>
 
 </div>
 </div>
@@ -13762,7 +13758,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can always get the name of all the columns in the table:</p>
+<p>Mund të merrni gjithmonëemrin e të gjitha kolonave në tabelë:</p>
 
 </div>
 </div>
@@ -13803,15 +13799,15 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The following functions make it easy for us to compute the elementary statistics on columns of a DataFrame:</p>
+<p>Funksionet e mëposhtme na lehtësojnë llogaritjen e statistikave elementare në kolonat e një DataFrame:</p>
 <ul>
-<li><code>sum</code> -- the sum of the elements in a column;</li>
-<li><code>mean</code> -- the average value (<em>arithmetic mean</em>) of the elements in a column;</li>
-<li><code>median</code> -- the median value of the elements in a column;</li>
-<li><code>min</code> -- the minimal value of the elements in a column;</li>
-<li><code>max</code> -- the maximal value of the elements in a column.</li>
+<li><code>sum</code> -- shuma e elementeve në një kolonë;</li>
+<li><code>mean</code> -- vlera mesatare (<em>arithmetic mean</em>) e elementëve në një kolonë;</li>
+<li><code>median</code> --vlera mesatare e elementeve në një kolonë</li>
+<li><code>min</code> -- vlera minimale e elementeve në një kolonë.</li>
+<li><code>max</code> -- vlera maksimale e elementeve në një kolonë.</li>
 </ul>
-<p>For example, the height of the shortest student is:</p>
+<p>Për shembull, gjatësia e studentit më të shkurtër është:</p>
 
 </div>
 </div>
@@ -13852,7 +13848,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The age of the oldest student:</p>
+<p>Mosha e studentit më të madh:</p>
 
 </div>
 </div>
@@ -13893,7 +13889,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The average height of students:</p>
+<p>Gjatësia mesatare e studentëve:</p>
 
 </div>
 </div>
@@ -13934,7 +13930,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The medial height:</p>
+<p>Gjatësia mesatare:</p>
 
 </div>
 </div>
@@ -14017,14 +14013,14 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.3.-Visualizing-data-represented-by-DataFrames">6.3. Visualizing data represented by DataFrames<a class="anchor-link" href="#6.3.-Visualizing-data-represented-by-DataFrames">&#182;</a></h2>
+<h2 id="6.3.-Vizualimi-i-t&#235;-dh&#235;nave-me-DataFrames">6.3. Vizualimi i t&#235; dh&#235;nave me DataFrames<a class="anchor-link" href="#6.3.-Vizualimi-i-t&#235;-dh&#235;nave-me-DataFrames">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is easy: just select the columns you would like to visualize. To see a few examples we start by loading our favourite library:</p>
+<p>Kjo është e lehtë: thjesht zgjidhni kolonat që do të dëshironit t’i vizatoni. Për të parë disa shembuj fillojmë duke ngarkuar librarinë tonë të preferuar:</p>
 
 </div>
 </div>
@@ -14045,7 +14041,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To visualize the height of students in the group we simply plot a bar chart which displays names and heights of students:</p>
+<p>Për të vizualizuar lartësinë e studentëve në grup, ne thjesht hartojmë një tabelë që tregon emrat dhe gjatësitë e studentëve:</p>
 
 </div>
 </div>
@@ -14092,7 +14088,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also visualize the age and weight of the students:</p>
+<p>Ne mund të vizaulizojmë moshën dhe peshën e studentëve:</p>
 
 </div>
 </div>
@@ -14141,9 +14137,9 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.4.-Loading-tables-from-local-CSV-files">6.4. Loading tables from local <em>CSV</em> files<a class="anchor-link" href="#6.4.-Loading-tables-from-local-CSV-files">&#182;</a></h2><p>The most time-consumig and the least appealing job in data analysis is turning raw data into tables. You may not have noticed that because the tables we have been using for demonstration were small, but in real life situations we usually get <em>huge</em> tables with thousands of rows and columns. (Have you ever heard of a part of data science called <em>Big Data</em>?)</p>
-<p>Today we use machines to collected data (automatic meteorogical stations, computerized polling stations etc). The machines then package the data they have collected into some very simple format that we can later load and process. <em>CSV</em> stands for "comma separated values" and is one of the simplest (and most popular) formats to represent tables. CSV files are text files whose rows correspond to the rows of the table, and the values within the same row are separated by commas ("comma separated values").</p>
-<p>For example, there is a file <em>Top 25 YouTubers.csv</em> in folder <em>data</em> that looks like this:</p>
+<h2 id="6.4.-Ngarkimi-i-tabelave-nga-skedari-lokal-CSV">6.4. Ngarkimi i tabelave nga skedari lokal <em>CSV</em><a class="anchor-link" href="#6.4.-Ngarkimi-i-tabelave-nga-skedari-lokal-CSV">&#182;</a></h2><p>Puna me më shumë kohë dhe më pak tërheqëse në analizën e të dhënave është kthimi i të dhënave të papërpunuara në tabela. Ndoshta nuk e keni vënë re se sepse tabelat që kemi përdorur për demonstrim ishin të vogla, por në situata të jetës reale ne zakonisht marrim tabela të mëdha me mijëra rreshta dhe kolona. (A keni dëgjuar ndonjëherë për një pjesë të shkencës së të dhënave të quajtur<em>Big Data</em>?)</p>
+<p>Sot ne përdorim makina për të mbledhur të dhëna (stacione automatike meteorogjike, vendvotime të kompjuterizuara etj). Makineritë më pas paketojnë të dhënat që ata kanë mbledhur në një format shumë të thjeshtë që më vonë mund t'i ngarkojmë dhe përpunojmë. <em>CSV</em> do të thotë "comma separated values" dhe është një nga format më të thjeshta (dhe më të njohura) për të përfaqësuar tabelat. Skedarët CSV janë skedarë teksti, rreshtat e të cilave korrespondojnë me rreshtat e tabelës, dhe vlerat brenda të njëjtit rresht ndahen me presje ("vlerat e ndara me presje").</p>
+<p>Për shembull, kemi një skedar <em>Top 25 YouTubers.csv</em>  në dosjen  <em>data</em> që ka këtë pamje:</p>
 
 <pre><code>RANK,GRADE,NAME,VIDEOS,SUBSCRIBERS,VIEWES
 1,A++,T-Series,13629,105783888,76945588449
@@ -14154,13 +14150,13 @@ Name: Height, dtype: int64</pre>
 25,A,TheEllenShow,10542,33362512,16519572219
 
 </code></pre>
-<p>This table contains information about top 25 YouTube channels according to the number of subscribers on July 1st, 2019. The first row of the file is the header row which tells us that the table has six columns (RANK, GRADE, NAME, VIDEOS, SUBSCRIBERS, VIEWES). The row</p>
+<p>Kjo tabelë përmban informacione në lidhje me 25 kanalet më të mira në YouTube sipas numrit të subsrcibers më 1 korrik 2019. Rreshti i parë i skedarit është rreshti i header që na tregon se tabela ka gjashtë kolona (RANK, GRADE, NAME, VIDEOS, SUBSCRIBERS, VIEWES). Rreshti</p>
 
 <pre><code>4,A++,Cocomelon - Nursery Rhymes,441,53163816,33519273951
 
 </code></pre>
-<p>means that the 4th most popular YouTube channel (on July 1st, 2019) has YouTube rank A++, its name is "Cocomelon - Nursery Rhymes", has published 441 videos on YouTube, has 53,163,816 subscribers and 33,519,273,951 views.</p>
-<p>The function <code>read_csv</code> from <code>pandas</code> reads a <em>CSV</em> file and turns it into a <em>DataFrame</em>. For example:</p>
+<p>do të thotë që kanali i 4-të më i popullarizuar në YouTube (më 1 korrik 2019) ka renditje në YouTube A ++, emri i tij është "Cocomelon - Nursery Rhymes", ka publikuar 441 video në YouTube, ka 53,163,816 subsrcibers dhe 33,519,273,951 shikime.</p>
+<p>Funksioni <code>read_csv</code> nga <code>pandas</code> lexon një <em>CSV</em> dhe e kthen në një <em>DataFrame</em>. Për shembull:</p>
 
 </div>
 </div>
@@ -14182,7 +14178,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can peek into the table using the function <code>head(N)</code> which displays the first N rows of a table. If we invoke the function without the argument it displays the first five rows:</p>
+<p>Ne mund të hedhim një vështrim në tabelë duke përdorur funksionin <code>head (N)</code> i cili tregon rreshtat e parë N të një tabele. Nëse e përdorim funksionin pa argument, ai tregon pesë rreshtat e parë:</p>
 
 </div>
 </div>
@@ -14447,7 +14443,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The function <code>tail(N)</code> displays the last N rows of the table (or only 5 if no arguemtn is provided):</p>
+<p>Funksioni<code>tail(N)</code> shfaq rreshtat e fundit N në tabelë (ose vetëm 5 nëse nuk jepet asnjë argument):</p>
 
 </div>
 </div>
@@ -14685,7 +14681,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let us visualize the number of subsrcibers of the top 25 YouTube channels:</p>
+<p>Le të vizualizojmë numrin e subsrcibers të 25 kanaleve më të mira në YouTube:</p>
 
 </div>
 </div>
@@ -14732,7 +14728,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It's a mess because the names of the channels are too long. In these situations using <code>barh</code> instead of <code>bar</code> can produce better results:</p>
+<p>Është rrëmujë sepse emrat e kanaleve janë shumë të gjata. Në këto situata përdorimi i "barh" në vend të "bar" mund të prodhojë rezultate më të mira:</p>
 
 </div>
 </div>
@@ -14779,13 +14775,13 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.5.-Loading-tables-from-remote-resources">6.5. Loading tables from remote resources<a class="anchor-link" href="#6.5.-Loading-tables-from-remote-resources">&#182;</a></h2><p>You can also load data from a remote resource directly, without the need to download the the data to your machine. In order to load a table from a remote resource you need an Internet connection (of course!) and you have to know the <em>exact location</em> of the table you want to load. The exact location of anu Internet resouce is provided by its <em>URL</em> (which stands for <em>Universal Resource Locator</em>).</p>
-<p>The "Internet address"</p>
+<h2 id="6.5.-Ngarkimi-i-tabelave-nga-burime-t&#235;-larg&#235;ta-(remote)">6.5. Ngarkimi i tabelave nga burime t&#235; larg&#235;ta (remote)<a class="anchor-link" href="#6.5.-Ngarkimi-i-tabelave-nga-burime-t&#235;-larg&#235;ta-(remote)">&#182;</a></h2><p>Ju gjithashtu mund të ngarkoni të dhënat nga një burim i largët direkt, pa pasur nevojë të shkarkoni të dhënat në makinën tuaj. Për të ngarkuar një tabelë nga një burim i largët, ju duhet një lidhje interneti (natyrisht!) Dhe ju duhet të dini vendndodhjen <em>ekzakte</em> të tabelës që dëshironi të ngarkoni.  Vendndodhja e saktë e çdo burimi në internet sigurohet nga  <em>URL</em> (which stands for <em>Universal Resource Locator</em>).</p>
+<p>Adresa e Internetit</p>
 
 <pre><code>https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv
 
 </code></pre>
-<p>contains a publicly available list of all the countries in the world. We can read this table directly using <code>read_csv</code>:</p>
+<p>përmban një listë të disponueshme publikisht për të gjitha vendet në botë. Ne mund ta lexojmë këtë tabelë duke përdorur direkt <code>read_csv</code>:</p>
 
 </div>
 </div>
@@ -14901,8 +14897,8 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The tables available on the Internet are usually not conveniently pre-packaged into a CSV file. They are most often embedded into a web page and surounded by some extra <em>HTML</em> code (<em>HTML</em> stands for "hyper-text markup language" and denotes the language all the web-pages on Earth are coded into).</p>
-<p>Fortunately, the function <code>read_html</code> can take a web-page and extract a table from it. For example, the following code reads the list of all the US states into a DataFrame directly from a Wikipedia web-page:</p>
+<p>Tabelat e disponueshme në internet zakonisht nuk janë para-paketuar në një skedar CSV. Ato më së shpeshti futen në një faqe në internet dhe përmbyten nga disa kod shtesë <em>HTML</em> (<em>HTML</em> nënkupton "hyper-text markup language" dhe tregon gjuhën që janë të koduar të gjitha faqet e internetit në Tokë).</p>
+<p>Për fat të mirë, funksioni "read_html" mund të marrë një faqe në internet dhe të nxjerrë një tabelë prej saj. Për shembull, kodi vijues lexon listën e të gjitha shteteve të SH.B.A. në një DataFrame direkt nga një faqe në internet e Wikipedia:</p>
 
 </div>
 </div>
@@ -14923,7 +14919,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Web pages are complex and can contain several tables. This is why <code>read_html</code> returns a list of tables. In this case the table we need is the first in the list, hence the indexing <code>[0]</code>. The option <code>header=[0,1]</code> means that the first two rows of the table make up the header. Let's peek:</p>
+<p>Faqet në internet janë komplekse dhe mund të përmbajnë disa tabela. Kjo është arsyeja pse <code>read_html</code> kthen një listë të tabelave. Në këtë rast tabela që na duhet është e para në listë, pra indeksimi <code>[0]</code>. Opsioni <code>header = [0,1]</code> nënkupton që dy rreshtat e parë të tabelës përbëjnë kokën. Le të shohim:</p>
 
 </div>
 </div>
@@ -15095,14 +15091,14 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.6.-Exercises">6.6. Exercises<a class="anchor-link" href="#6.6.-Exercises">&#182;</a></h2>
+<h2 id="6.6.-Ushtrime">6.6. Ushtrime<a class="anchor-link" href="#6.6.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> Look at the code and answer the questions below:</p>
+<p><strong>Ushtrimi 1.</strong> Shikoni kodin dhe përgjigjuni pyetjeve më poshtë:</p>
 
 </div>
 </div>
@@ -15179,15 +15175,15 @@ Name: Height, dtype: int64</pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>Why do we have to import two libraries?</li>
-<li>Why do we represent the tables by DataFrames, and not lists?</li>
-<li>What are the names of the columns in the DataFrame <code>table</code>?</li>
-<li>What is the difference between <code>min</code>, <code>mean</code> and <code>median</code>?</li>
-<li>What do you have to change to make the chart depict the weight of students?</li>
-<li>How would you load the file <code>TempAnomalies.csv</code> if it had a header row?</li>
-<li>Is the DataFrame <code>countries</code> created from the information stored locally on your computer?</li>
-<li>What is the format of the table the DataFrame <code>US</code> was created from?</li>
-<li>What happens if you type <code>https://simple.wikipedia.org/wiki/List_of_U.S._states</code> into the browser?</li>
+<li>Pse duhet të importojmë dy librari?</li>
+<li>Pse përfaqësojmë tabelat sipas DataFrames, dhe jo listat?</li>
+<li>Cilët janë emrat e kolonave në tabelën DataFrame `?</li>
+<li>Cili është ndryshimi midis <code>min</code>,<code>mean</code> dhe <code>median</code>?</li>
+<li>Çfarë duhet të ndryshoni për të bërë që grafiku të përshkruaj peshën e studentëve?</li>
+<li>Si do ta ngarkoni skedarin <code>TempAnomalies.csv</code> nëse do të kishte një rresht me header?</li>
+<li>A është krijuar DataFrame 'vendet' nga informacionet e ruajtura në çast në kompjuterin tuaj?</li>
+<li>Cili është formati i tabelës nga është krijuar dataFrame <code>US</code>?</li>
+<li>Çfarë ndodh nëse shkruani <code>https: // thjeshtë.wikipedia.org / wiki / List_of_U.S._states</code> në shfletues?</li>
 </ol>
 
 </div>
@@ -15196,7 +15192,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong> The table below depicts the production of corn a wheat in an agricultural region of Europe (the numbers are in 1000 tons):</p>
+<p><strong>Ushtrimi 2.</strong> Tabela më poshtë përshkruan prodhimin e misrit të një gruri në një rajon bujqësor të Evropës (numrat janë në 1000 tonë):</p>
 <table>
 <thead><tr>
 <th>Year</th>
@@ -15232,7 +15228,7 @@ Name: Height, dtype: int64</pre>
 </tr>
 </tbody>
 </table>
-<p><em>(a)</em> Turn this table into a list and create a <em>DataFrame</em> from the list. Then compute the maximal yield of corn and the minimal yield of wheat.</p>
+<p><em>(a)</em> Kthejeni këtë tabelë në një listë dhe krijoni një <em>DataFrame</em> nga lista. Pastaj llogaritni rendimentin maksimal të misrit dhe rendimentin minimal të grurit.</p>
 
 </div>
 </div>
@@ -15240,7 +15236,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Visualize the data using a bar chart.</p>
+<p><em>(b)</em> Vizualizoni të dhënat duke përdorur një tabelë.</p>
 
 </div>
 </div>
@@ -15248,7 +15244,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Compute the average yield of corn; then compute the difference between the maximal and the minimal yield of wheat.</p>
+<p><em>(c)</em> Llogaritni rendimentin mesatar të misrit; atëherë llogaritni ndryshimin midis rendimentit maksimal dhe atij minimal të grurit.</p>
 
 </div>
 </div>
@@ -15256,7 +15252,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> This is an overview of spendings of a family over a year (in the local currency):</p>
+<p><strong>Ushtrimi 3.</strong> Kjo është një përmbledhje e shpenzimeve të një familjeje gjatë një viti (në monedhën vendase):</p>
 <table>
 <thead><tr>
 <th>Item</th>
@@ -15397,7 +15393,7 @@ Name: Height, dtype: int64</pre>
 </tr>
 </tbody>
 </table>
-<p>This table represented as a list looks like this:</p>
+<p>Kjo tabelë, e prezantuar si listë, duket kështu:</p>
 
 </div>
 </div>
@@ -15427,7 +15423,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Turn this into a <em>DataFrame</em>.</p>
+<p><em>(a)</em> Ktheje në një <em>DataFrame</em>.</p>
 
 </div>
 </div>
@@ -15435,7 +15431,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Compute the total spendings per month (how much in January, how much in February, etc).</p>
+<p><em>(b)</em> Llogarit shpenzimet totale për cdo muaj (sa në Janar, sa në Shkurt, etj).</p>
 
 </div>
 </div>
@@ -15445,7 +15441,7 @@ Name: Height, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15456,7 +15452,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 4.</strong> The file <em>data/LEB.csv</em> contains the overall <em>Life Expectancy at Birth</em> of humans computed in five-year periods.</p>
+<p><strong>Ushtrimi 4.</strong> Skedari <em>data/LEB.csv</em> përmban totalin <em>Life Expectancy at Birth</em> e personave të llogaritur në 5 vite.</p>
 
 </div>
 </div>
@@ -15464,7 +15460,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Load this file into a <em>DataFrame</em>.</p>
+<p><em>(a)</em> Ngarko këtët skedar në një <em>DataFrame</em>.</p>
 
 </div>
 </div>
@@ -15472,7 +15468,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Visualize the data.</p>
+<p><em>(b)</em> Visualizo të dhënat.</p>
 
 </div>
 </div>
@@ -15480,8 +15476,8 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 5.</strong> At a PE lecture the students were practising long jumps. Each student had three tries and the data is collected in <em>LongJump.csv</em> available in the folder <em>data</em>. The first row of the file is the header.</p>
-<p><em>(a)</em> Load this file into a <em>DataFrame</em>.</p>
+<p><strong>Ushtrimi 5.</strong> Tek foto PE studentët praktikonin kërcime të gjata. Secili student kishte tre prova dhe të dhënat mblidhen në <em>LongJump.csv</em> të disponueshme në dosjen <em>data</em>. Rreshti i parë i skedarit është header.</p>
+<p><em>(a)</em> Ngarko këtë skeadr në një <em>DataFrame</em>.</p>
 
 </div>
 </div>
@@ -15489,7 +15485,7 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Visualize the data by a bar chart. (Hint: Be creative.)</p>
+<p><em>(b)</em> Vizualizoni të dhënat me një tabelë. (Bëhuni krijues.)</p>
 
 </div>
 </div>
@@ -15499,7 +15495,7 @@ Name: Height, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15510,12 +15506,12 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 6.</strong> At the following URL</p>
+<p><strong>Ushtrimi 6.</strong> Në URL e mëposhtme</p>
 
 <pre><code>https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv
 
 </code></pre>
-<p>you can find a publicly available table with the list of countries in the world and some parameters of economic developemnt of the states summarized in five-year intervals. The table has the following columns:</p>
+<p>mund të gjeni një tabelë në dispozicion të publikut me listën e vendeve në botë dhe disa parametra të zhvillimit ekonomik të shteteve të përmbledhura në intervalet pesë-vjeçare. Tabela ka kolonat e mëposhtme:</p>
 <ul>
 <li>country</li>
 <li>year</li>
@@ -15524,7 +15520,7 @@ Name: Height, dtype: int64</pre>
 <li>lifeExp (= life expextancy; how many years, on average, is a citizen of that country expected to live)</li>
 <li>gdpPercap (= GDP per capitem; how much money, on average is US dollars, do citizens of that country earn)</li>
 </ul>
-<p>Load this table into a <em>DataFrame</em> and display the first 20 rows, as well as the last 10 rows of the table.</p>
+<p>Ngarko këtë tabelë në një  <em>DataFrame</em> dhe shfaqni 20 rreshtat e parë, si dhe 10 rreshtat e fundit të tabelës.</p>
 
 </div>
 </div>
@@ -15534,7 +15530,7 @@ Name: Height, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15545,12 +15541,12 @@ Name: Height, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 7.</strong> Load the table from the following URL</p>
+<p><strong>Ushtrimi 7.</strong> Shfaq tabelën nga URL</p>
 
 <pre><code>https://www.worldometers.info/world-population/population-by-country/
 
 </code></pre>
-<p>into a DataFrame and display the first few rows of the table.</p>
+<p>në një DataFrame dhe shfaq disa rreshta nga tabela.</p>
 
 </div>
 </div>
@@ -15560,7 +15556,20 @@ Name: Height, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15569,11 +15578,7 @@ Name: Height, dtype: int64</pre>
 
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  

@@ -13073,15 +13073,15 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="7.-Indexing-and-transposing-a-table">7. Indexing and transposing a table<a class="anchor-link" href="#7.-Indexing-and-transposing-a-table">&#182;</a></h1><p>In this lecture we demonstrate:</p>
+<h1 id="7.-Indeksimi-dhe-transpozimi-i-nj&#235;-tabele">7. Indeksimi dhe transpozimi i nj&#235; tabele<a class="anchor-link" href="#7.-Indeksimi-dhe-transpozimi-i-nj&#235;-tabele">&#182;</a></h1><p>Në këtë leksion ne demonstrojmë:</p>
 <ol>
-<li>how indexing a table provides flexible access to the elements of the table;</li>
-<li>how to compute accross rows and columns of the table; and</li>
-<li>how to transpose a table.</li>
+<li>si indeksimi i një tabele siguron një qasje fleksibël në elementet e tabelës;</li>
+<li>si të llogariten nëpër rreshta dhe kolona të tabelës; dhe</li>
+<li>si të zhvendoset një tabelë.</li>
 </ol>
 
 </div>
@@ -13090,15 +13090,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.1.-Indexing">7.1. Indexing<a class="anchor-link" href="#7.1.-Indexing">&#182;</a></h2>
+<h2 id="7.1.-Indeksimi">7.1. Indeksimi<a class="anchor-link" href="#7.1.-Indeksimi">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We have seen that working with columns of a DataFrame is very easy because colums have names. It would be as easy to work with  rows of a DataFrame if we had a way to name the rows somehow. The process that does precisely that is called the <em>indexing of a table</em>.</p>
-<p>To index a table we first have to identify a column (<em>the indexing column</em> or <em>the index</em>) such that each row in <em>uniquely determined</em> by the value in the indexing column. For example, in the following table</p>
+<p>Ne kemi parë që të punosh me kolonat e një DataFrame është shumë e lehtë sepse kolonat kanë emra. Do të ishte aq e thjeshtë për të punuar me rreshtat e një DataFrame nëse do të kishim një mënyrë për t'i emëruar rreshtat në një farë mënyre. Procesi që bën saktësisht që quhet <em>indeksimi i një tabele</em>.</p>
+<p>Për të indeksuar një tabelë, së pari duhet të identifikojmë një kolonë (<em>kolonën e indeksimit</em> ose <em>indeksin</em>) në mënyrë që çdo rresht në  <em>përcaktohet në mënyrë unike</em> sipas vlerës në kolonën e indeksimit. Për shembull, në tabelën vijuese</p>
 <table>
 <thead><tr>
 <th><strong>Name</strong></th>
@@ -13188,8 +13188,8 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>"Name" is a good candidate for the indexing column because in this table vevery student has a unique name (note that in real life this is not necessarily the case). "Height" is not a good choice because there are two students whose height is 165; and the same goes for other columns.</p>
-<p>The function <code>set_index</code> sets the index column of the table:</p>
+<p>"Name" është një kandidat i mirë për kolonën e indeksimit sepse në këtë tabelë studenti i gjërë ka një emër unik (vini re se në jetën reale kjo nuk është rastësisht). "Height" nuk është një zgjedhje e mirë sepse janë dy studentë, lartësia e të cilëve është 165; dhe e njëjta vlen edhe për kolonat e tjera.</p>
+<p>Funksioni <code>set_index</code> vendos kolonën e indeksit të tabelës:</p>
 
 </div>
 </div>
@@ -13225,7 +13225,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The new table (<code>students_ix</code>) differs from the old one (<code>students_df</code>) only in the fact that the rows of the table are now <em>indexed</em> by the names of the students. Here is the unidexed version of the table:</p>
+<p>Tabela e re (<code>students_ix</code>) ndryshon nga ajo e vjetra (<code>students_df</code>) vetëm në faktin se rreshtat e tabelës tani janë <em>indeksuar</em> nga emrat e studentëve. Këtu është versioni i paindeksuar i tabelës:</p>
 
 </div>
 </div>
@@ -13381,7 +13381,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>and here is the indexed version of the same table:</p>
+<p>dhe këtu është versioni i indeksuar i së njëjtës tabelë:</p>
 
 </div>
 </div>
@@ -13532,7 +13532,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The column "Name" is still present, but now it has a special statis. If we try to access it as we did before we get an error (the error report is quite long; don't bother reading it carefully, just scroll down):</p>
+<p>Kolona "Name" është ende e pranishme, por tani ajo ka një statis të veçantë. Nëse përpiqemi t'i qasemi asaj siç kemi bërë përpara se të kemi një gabim (raporti i gabimit është mjaft i gjatë; mos u shqetësoni ta lexoni me kujdes, thjesht lëvizni poshtë):</p>
 
 </div>
 </div>
@@ -13637,7 +13637,7 @@ During handling of the above exception, another exception occurred:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>However, it is there as an <em>index column</em>:</p>
+<p>Gjithsesi, ka një  <em>kolonë të indeksuar</em>:</p>
 
 </div>
 </div>
@@ -13680,7 +13680,7 @@ During handling of the above exception, another exception occurred:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Visualizing, say, the height of the students in the group now works like this:</p>
+<p>Vizualisht, të themi, gjatësia e studentëve në grup tani llogaritet kështu:</p>
 
 </div>
 </div>
@@ -13726,15 +13726,15 @@ During handling of the above exception, another exception occurred:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.2.-Accessing-rows-and-individual-cells-of-an-indexed-table">7.2. Accessing rows and individual cells of an indexed table<a class="anchor-link" href="#7.2.-Accessing-rows-and-individual-cells-of-an-indexed-table">&#182;</a></h2>
+<h2 id="7.2.-Qasja-n&#235;-rreshta-dhe-qeliza-individuale-t&#235;-nj&#235;-tabele-t&#235;-indeksuar">7.2. Qasja n&#235; rreshta dhe qeliza individuale t&#235; nj&#235; tabele t&#235; indeksuar<a class="anchor-link" href="#7.2.-Qasja-n&#235;-rreshta-dhe-qeliza-individuale-t&#235;-nj&#235;-tabele-t&#235;-indeksuar">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>DataFrame</em> is optimized to provide efficient access to the columns of the table. However, in an indexed DataFrame it is also easy to access rows and cells of the table using the function <code>loc</code> (short for "location").</p>
-<p>We can display a single row of the table like this:</p>
+<p><em>DataFrame</em> është optimizuar për të siguruar qasje efikase në kolonat e tabelës. Sidoqoftë, në një DataFrame të indeksuar është gjithashtu e lehtë për të hyrë në rreshta dhe qeliza të tabelës duke përdorur funksionin <code>loc</code> (shkurt  për "vendndodhjen").</p>
+<p>Ne mund të shfaqim një rresht të vetëm të tabelës si kjo:</p>
 
 </div>
 </div>
@@ -13779,7 +13779,7 @@ Name: Ethan, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>or a range of rows like this:</p>
+<p>ose disa rreshta si:</p>
 
 </div>
 </div>
@@ -13888,7 +13888,7 @@ Name: Ethan, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also focus on a particular feature:</p>
+<p>Ne gjithashtu mund të përqëndrohemi në një veçori të veçantë:</p>
 
 </div>
 </div>
@@ -13929,7 +13929,7 @@ Name: Ethan, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>or display a set of features for a set of rows:</p>
+<p>ose shfaq një sërë karakteristikash për një seri rreshtash:</p>
 
 </div>
 </div>
@@ -14024,14 +14024,14 @@ Name: Ethan, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.3.-Computing-accross-rows-and-columns-of-an-indexed-table">7.3. Computing accross rows and columns of an indexed table<a class="anchor-link" href="#7.3.-Computing-accross-rows-and-columns-of-an-indexed-table">&#182;</a></h2>
+<h2 id="7.3.-Llogaritja-n&#235;p&#235;r-rreshta-dhe-kolona-t&#235;-nj&#235;-tabele-t&#235;-indeksuar">7.3. Llogaritja n&#235;p&#235;r rreshta dhe kolona t&#235; nj&#235; tabele t&#235; indeksuar<a class="anchor-link" href="#7.3.-Llogaritja-n&#235;p&#235;r-rreshta-dhe-kolona-t&#235;-nj&#235;-tabele-t&#235;-indeksuar">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the table below we have collected the marks of students we have already met in some subjects (Computers, English, Maths, Physics, Chemistry and Arts):</p>
+<p>Në tabelën më poshtë kemi mbledhur notat e studentëve që kemi takuar tashmë në disa lëndë (Computers, English, Maths, Physics, Chemistry and Arts):</p>
 
 </div>
 </div>
@@ -14062,7 +14062,7 @@ Name: Ethan, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's turn this into an indexed DataFrame</p>
+<p>Le ta kthejmë në një DataFrame të indeskuar</p>
 
 </div>
 </div>
@@ -14242,7 +14242,7 @@ Name: Ethan, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Computing the average mark per subject is easy: we just apply <code>mean</code> to each column of the table:</p>
+<p>Llogaritja e notës mesatare për lëndë është e lehtë: ne thjesht aplikojmë <code>mean</code> për secilën kolonë të tabelës:</p>
 
 </div>
 </div>
@@ -14287,7 +14287,7 @@ Arts -&gt; 4.55
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To compute the average mark per student we shall apply <code>mean</code> to the rows of the table, which we access using <code>loc</code>. As a warm-up let us compute the average mark for Kate:</p>
+<p>Për të llogaritur notën mesatare për student do të aplikojmë <code>mean</code> në rreshtat e tabelës, të cilave i aksesojmë duke përdorur  <code>loc</code>. Si një stërvitje, le të llogarisim notën mesatare për Kate:</p>
 
 </div>
 </div>
@@ -14336,7 +14336,7 @@ The average mark: 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The names of all the students are located in the index column, so the average mark of each student in the table can be computed like this:</p>
+<p>Emrat e të gjithë studentëve janë të vendosur në kolonën e indeksit, kështu që nota mesatare e secilit student në tabelë mund të llogaritet si kjo:</p>
 
 </div>
 </div>
@@ -14386,10 +14386,10 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.4.-Transposing-a-table">7.4. Transposing a table<a class="anchor-link" href="#7.4.-Transposing-a-table">&#182;</a></h2><p><em>Transposing</em> a table is an operation that swaps the rows and columns of the table so that the first row swaps with first column, the second row swaps with the secong column and so on. When transposing an indexed DataFrame the names of the columns become the index row of the new table, while the index row gives names of the columns in the new table.</p>
+<h2 id="7.4.-Transpozimi-i-nj&#235;-tabele">7.4. Transpozimi i nj&#235; tabele<a class="anchor-link" href="#7.4.-Transpozimi-i-nj&#235;-tabele">&#182;</a></h2><p><em>Transposing</em> një tabelë është një operacion që këmbejnë rreshtat dhe kolonat e tabelës në mënyrë që rreshti i parë të shkëmbehet me kolonën e parë, rreshtat e dytë shkëmbehen me kolonën e dytë etj. Kur transpozoni një DataFrame të indeksuar, emrat e kolonave bëhen rreshti i indeksit të tabelës së re, ndërsa rreshti i indeksit jep emrat e kolonave në tabelën e re.</p>
 <p><img src="pics/DataFrame-T.jpg" alt="Transpose"></p>
-<p>Recall that DataFrames are optimized for efficient access to columns of the table. Therefore, it is convenient to transpose a table which has a few very long rows. Of coruse, we don't have to transpose a table to be able to work with it efficiently (since <code>loc</code> gives access to rows of the table), so transposing a table is a matter of taste or convenience.</p>
-<p>To transpose a table just apply <code>T</code> to get the new, transposed table. For example recall that:</p>
+<p>Kujtoni që DataFrames janë optimizuar për qasje efikase në kolonat e tabelës. Prandaj, është e përshtatshme për të transpozuar një tabelë e cila ka disa rreshta shumë të gjatë. Për korrigjim, ne nuk kemi pse të imponojmë një tabelë që të jemi në gjendje të punojmë me të në mënyrë efikase (pasi 'loc' u jep mundësinë e përdorimit të rreshtave të tabelës), kështu që transpozimi i një tabelë është çështje shije ose komode.</p>
+<p>Për të zhvendosur një tabelë thjesht aplikoni <code>T</code> për të marrë tabelën e re, të transpozuar. Për shembull, kujtoni që:</p>
 
 </div>
 </div>
@@ -14566,7 +14566,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After transposing:</p>
+<p>Pas transpozimit:</p>
 
 </div>
 </div>
@@ -14587,7 +14587,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>the new table looks line this:</p>
+<p>tabela e re duket kështu:</p>
 
 </div>
 </div>
@@ -14745,7 +14745,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's check what happened to <code>index</code> and <code>columns</code>. In the original table we have:</p>
+<p>Le të kontrollojmë se çfarë ka ndodhur me <code>index</code> dhe <code>columns</code>. Në tabelën origjinale kemi:</p>
 
 </div>
 </div>
@@ -14821,7 +14821,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>while in the transposed table we have:</p>
+<p>ndërsa në tabelën e transpozuar kemi:</p>
 
 </div>
 </div>
@@ -14897,7 +14897,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we have already seen, the average mark per subject can be computed easily:</p>
+<p>Siç kemi parë tashmë, nota mesatare për lëndë mund të llogaritet lehtë:</p>
 
 </div>
 </div>
@@ -14942,7 +14942,7 @@ Arts -&gt; 4.55
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To compute the average marks for each student, we can use <code>loc</code> to access the rows of the original table, but we can alsoapply the same logic as above, but to the transposed table:</p>
+<p>Për të llogaritur notat mesatare për secilin student, ne mund të përdorim <code>loc</code> për të hyrë në rreshtat e tabelës origjinale, por mund të bëjmë gjithashtu të njëjtën logjikë si më lart, por në tabelën e transpozuar:</p>
 
 </div>
 </div>
@@ -14992,14 +14992,14 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.5.-Exercises">7.5. Exercises<a class="anchor-link" href="#7.5.-Exercises">&#182;</a></h2>
+<h2 id="7.5.-Ushtrime">7.5. Ushtrime<a class="anchor-link" href="#7.5.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> Look carefully at the code below and then answer the questions that follow:</p>
+<p><strong>Ushtrimi 1.</strong> Shikoni me kujdes kodin më poshtë dhe pastaj përgjigjuni pyetjeve që vijojnë:</p>
 
 </div>
 </div>
@@ -15039,13 +15039,13 @@ Kate -&gt; 4.33
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>What is the difference between <code>students_df</code> and <code>students_ix</code>?</li>
-<li>What does <code>students_ix.index</code> mean?</li>
-<li>What is the value of <code>students_ix.loc["Fred"]</code>?</li>
-<li>What is the value of <code>students_ix.loc["Fred", "Height"]</code>?</li>
-<li>What is the value of <code>students_df.loc["Fred", "Height"]</code>?</li>
-<li>What do you think, why did we apply <code>T</code> to <code>temp_anomalies</code>?</li>
-<li>How many columns does <code>temp_anomalies_tr</code> have?</li>
+<li>Cila është diferenca  <code>students_df</code> dhe <code>students_ix</code>?</li>
+<li>Çfarë do të thotë <code>students_ix.index</code>?</li>
+<li>Sa është vlera e <code>students_ix.loc["Fred"]</code>?</li>
+<li>Sa është vlera e <code>students_ix.loc["Fred", "Height"]</code>?</li>
+<li>Sa është vlera e <code>students_df.loc["Fred", "Height"]</code>?</li>
+<li>Mund të aplikojmë <code>T</code> tek <code>temp_anomalies</code>?</li>
+<li>Sa kolona ka <code>temp_anomalies_tr</code>?</li>
 </ol>
 
 </div>
@@ -15054,7 +15054,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong> This is an overview of spendings of a family over a year (in the local currency):</p>
+<p><strong>Ushtrimi 2.</strong> Kjo është një përmbledhje e shpenzimeve të një familjeje gjatë një viti (në monedhën vendase):</p>
 <table>
 <thead><tr>
 <th>Item</th>
@@ -15195,7 +15195,7 @@ Kate -&gt; 4.33
 </tr>
 </tbody>
 </table>
-<p>This table represented as a list looks like this:</p>
+<p>Tabela e prezantuar si listë duket kështu:</p>
 
 </div>
 </div>
@@ -15225,7 +15225,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Convert this list into a <em>DataFrame</em> and index it.</p>
+<p><em>(a)</em> Shndërroni këtë listë në një DataFrame dhe indeksoni atë.</p>
 
 </div>
 </div>
@@ -15233,7 +15233,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Calculate the average spending of this family per item (Rent, Electricity etc).</p>
+<p><em>(b)</em> Llogaritni shpenzimet mesatare të kësaj familje për artikull (Rent, Electricity etj).</p>
 
 </div>
 </div>
@@ -15241,7 +15241,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> Five groups of students took part in a student poll about their favourite movie genres. Each student was allowed to vote for exactly one genre. The results of the poll are summarized below:</p>
+<p><strong>Ushtrimi 3.</strong> Pesë grupe studentësh morën pjesë në një sondazh studentor për zhanret e tyre të preferuar të filmit. Çdo studenti i lejohej të votonte saktësisht një zhanër. Rezultatet e sondazhit janë përmbledhur më poshtë:</p>
 <table>
 <thead><tr>
 <th>Genre</th>
@@ -15310,7 +15310,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> COnvert this into a <em>DataFrame</em> indexed by genre.</p>
+<p><em>(a)</em> Kthejeni këtë në një <em>DataFrame</em> të indeksuar nga zhanri.</p>
 
 </div>
 </div>
@@ -15318,7 +15318,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Compute the number of votes per genre.</p>
+<p><em>(b)</em> Llogaritni numrin e votave për zhanër.</p>
 
 </div>
 </div>
@@ -15326,7 +15326,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> For each group compute the total number of students that took part in polling.</p>
+<p><em>(c)</em> Për secilin grup llogaritni numrin e përgjithshëm të studentëve që morën pjesë në votime.</p>
 
 </div>
 </div>
@@ -15334,7 +15334,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> What is the total number of students that took part in polling?</p>
+<p><em>(d)</em> Cili është numri i përgjithshëm i studentëve që morën pjesë në votime?</p>
 
 </div>
 </div>
@@ -15342,7 +15342,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 4.</strong> Nutritive data for certain products in given in the table below:</p>
+<p><strong>Ushtrimi 4.</strong> Të dhëna ushqyese për produkte të caktuara, të dhëna në tabelën më poshtë:</p>
 <table>
 <thead><tr>
 <th>Product (100g)</th>
@@ -15418,7 +15418,7 @@ Kate -&gt; 4.33
 </tr>
 </tbody>
 </table>
-<p>In the cell below we have converted this table into a <em>DataFrame</em> indexed by the product name:</p>
+<p>Në qelizën më poshtë kemi shndërruar këtë tabelë në një <em>DataFrame</em> të indeksuar me emrin e produktit:</p>
 
 </div>
 </div>
@@ -15450,7 +15450,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> For his breakfast Mike had two pieces of white bread and had a cup of milk. Each piece of bread had some cheese spread and a slice of ham. What is the nutritive value of Mike's breakfast (in kcal) if we assume that each piece of bread weighs 100g, that 10h of spread was used per piece of bread, that one slice of ham weighs 20g and that a cup of milk contains 200 d of milk?</p>
+<p><em>(a)</em> Për mëngjesin e tij Mike kishte dy copë bukë të bardhë dhe kishte një filxhan qumësht. Çdo copë bukë kishte përhapur disa djathë dhe një fetë proshutë. Cila është vlera ushqyese e mëngjesit të Mike (në kcal) nëse supozojmë se secila copë bukë peshon 100g, se për 10h përhapje është përdorur për një copë bukë, se një fetë proshutë peshon 20g dhe se një filxhan qumësht përmban 200 d e qumeshtit?</p>
 
 </div>
 </div>
@@ -15458,7 +15458,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> How much fat was there in Mike's breakfast?</p>
+<p><em>(b)</em> Sa yndyrë ka pasur në mëngjesin e Mike?</p>
 
 </div>
 </div>
@@ -15466,7 +15466,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Visualize the amount of carohydrates in these products.</p>
+<p><em>(c)</em> Vizualizoni sasinë e karbohidrateve në këto produkte.</p>
 
 </div>
 </div>
@@ -15474,13 +15474,13 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 5.</strong> The temperature anomaly is a number that tells us how much the average temperature in a particular year deviates from the optimal value. The file <em>TempAnomalies.csv</em> located in the folder <em>data</em> contains the temperature anomalies (in degrees Celsius) for the peroid of 40 years (1977-2017). The file has two rows like this:</p>
+<p><strong>Ushtrimi 5.</strong> Anomalia e temperaturës është një numër që na tregon se sa temperatura mesatare në një vit të veçantë devijon nga vlera optimale. Skeda <em>TempAnomalies.csv</em> e vendosur në dosjen <em>data</em> përmban anomalitë e temperaturës (në gradë Celsius) për periudhën prej 40 vjetësh (1977-2017). Dosja ka dy rreshta si kjo:</p>
 
 <pre><code>1977,1978,1979,1980,1981,...
 0.22,0.14,0.15,0.3,0.37,...
 
 </code></pre>
-<p><em>(a)</em> Load the table into a <em>DataFrame</em> (Note: the table has no header so you need the <code>header=None</code> option in your <code>read_scv</code>.)</p>
+<p><em>(a)</em> Vendosni tabelën në një <em>DataFrame</em> (Shënim: tabela nuk ka header, kështu që ju nevojitet opsioni <code>header = None</code> në<code>read_scv</code> tuaj.)</p>
 
 </div>
 </div>
@@ -15490,7 +15490,7 @@ Kate -&gt; 4.33
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15501,7 +15501,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Transpose the table and call the two columns "Year" and "Anomaly".</p>
+<p><em>(b)</em> Ndërroni tabelën dhe thërrsni dy kolonat "Year" dhe "Anomaly".</p>
 
 </div>
 </div>
@@ -15511,7 +15511,7 @@ Kate -&gt; 4.33
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15522,7 +15522,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Index the table.</p>
+<p><em>(c)</em> Indekso tabelën.</p>
 
 </div>
 </div>
@@ -15532,7 +15532,7 @@ Kate -&gt; 4.33
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15543,7 +15543,7 @@ Kate -&gt; 4.33
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Visualize the temperature anomalies by a line chart.</p>
+<p><em>(d)</em> Vizualizoni anomalitë e temperaturës me një grafik vijash.</p>
 
 </div>
 </div>
@@ -15553,7 +15553,7 @@ Kate -&gt; 4.33
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15562,11 +15562,7 @@ Kate -&gt; 4.33
 
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  

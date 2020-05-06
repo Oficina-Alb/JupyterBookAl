@@ -13073,15 +13073,15 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="10.-Jupyter-and-Excel">10. Jupyter and Excel<a class="anchor-link" href="#10.-Jupyter-and-Excel">&#182;</a></h1><p>In this lecture we will talk abot:</p>
+<h1 id="10.-Jupyter-dhe-Excel">10. Jupyter dhe Excel<a class="anchor-link" href="#10.-Jupyter-dhe-Excel">&#182;</a></h1><p>Në këtë leksion do të flasim për:</p>
 <ol>
-<li>the relationship between Jupyter and Microsoft Excel;</li>
-<li>loading tables from Excel files; and</li>
-<li>writing tables to Excel files.</li>
+<li>marrëdhëniet midis Jupyter dhe Microsoft Excel;</li>
+<li>tabela e ngarkimit nga skedarët Excel; dhe</li>
+<li>shkrimi i tabelave te skedarët Excel.</li>
 </ol>
 
 </div>
@@ -13090,16 +13090,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="10.1.-Why-Jupyter,-and-why-Excel">10.1. Why Jupyter, and why Excel<a class="anchor-link" href="#10.1.-Why-Jupyter,-and-why-Excel">&#182;</a></h2><p>Microsoft Excel is the most popular spreadsheet program in the world. It owes its popularity to the fact that the table you are working on is right there in front of you, you can see it, you can click on a cell and enter a value or a formula. It is a typical representative of the <em>What You See Is What You Get</em> philosophy. So, why did we decide to focus this course on Jupyter?</p>
+<h2 id="10.1.-Pse-Jupyter,-dhe-pse-Excel">10.1. Pse Jupyter, dhe pse Excel<a class="anchor-link" href="#10.1.-Pse-Jupyter,-dhe-pse-Excel">&#182;</a></h2><p>Microsoft Excel është programi më i popullarizuar spreadsheet në botë. I detyrohet popullaritetit të saj për faktin se tabela ku po punoni është pikërisht atje përpara jush, mund ta shihni, mund të klikoni në një qelizë dhe të shkruani një vlerë ose një formulë. Është një përfaqësues tipik i shprehjes <em>çfarë shihni është ajo që  merrni</em>. Prandaj, pse vendosëm ta përqendrojmë këtë kurs te Jupyter?</p>
 <ul>
-<li><p><em>Price.</em> Microsoft Excel is a commercial product -- it costs money. In contrast to that Python, all of its accompanying libraries and Jupyter as the interactive environment are <em>free of charge</em>.</p>
+<li><p>Çmimi._ Microsoft Excel është një produkt komercial - kushton. Në ndryshim me Python, të gjitha libraritë e tij shoqëruese dhe Jupyter si mjedisi ndërveprues janë <em>pa pagesë</em>.</p>
 </li>
-<li><p><em>Clearly visible procedures.</em> Data processing in Microsoft Excell consists of entering formulas into cells. If you are working with a table with intricate relationships between cells expressed by many complicated formulas spread out over the entire worksheet, it soon becomes almost impossible to track the flow of information and, more importantly, to understand, debug and improve the process. On the other hand, if the processing is expressed in terms of a programming language (such as Python), we do lose the <em>What You See Is What You Get</em> approach of Excel but gain much more in readability of the code. A clear procedure located in one place (a Jupyter cell or a Python file) and coded in a simple and expressive programming language can easily be checkt for errors, upgraded and shared.</p>
+<li><p><em>Procedurat qartësisht të dukshme.</em> Përpunimi i të dhënave në Microsoft Excel konsiston në futjen e formulave në qeliza. Nëse jeni duke punuar me një tabelë me marrëdhënie të ndërlikuara midis qelizave të shprehura nga shumë formula të ndërlikuara të shpërndara në të gjithë fletën e punës, së shpejti bëhet gati e pamundur të gjurmoni rrjedhën e informacionit dhe, më e rëndësishmja, të kuptoni, debugoni dhe përmirësoni procesin. Nga ana tjetër, nëse përpunimi shprehet në terma të një gjuhe programimi (si Python), ne humbim qasjen <em>çfarë ju shihni është ajo që merrni</em> e Excel-it, por fitojmë shumë më tepër në lexueshmërinë e kodit. Një procedurë e qartë e vendosur në një vend (një qelizë Jupyter ose një skedar Python) dhe e koduar në një gjuhë të thjeshtë dhe ekspresive të programimit lehtë mund të kontrollohet për gabime, të azhornohet dhe të ndahet.</p>
 </li>
-<li><p><em>Flexibility.</em> Microsoft Excel is convenient for processing tables that are relatively small so that they can easily fit onto a few computer screens. Once you find yourself in the position where you have to process <em>huge</em> tables with thousands of rows and columns the advantages of scripting languages become obvious. Moreover, each Python distribution comes with a large entourage of libraries where most of the standard data processing algorithms have already been implemented.</p>
+<li><p><em>Fleksibiliteti.</em> Microsoft Excel është i përshtatshëm për përpunimin e tabelave që janë relativisht të vogla në mënyrë që ata të mund të përshtaten lehtësisht në disa ekrane kompjuteri. Pasi të gjeni veten në pozicionin ku duhet të përpunoni tabela <em>të mëdha</em> me mijëra rreshta dhe kolona, avantazhet e gjuhëve të shkrimit bëhen të dukshme. Për më tepër, çdo shpërndarje e Python vjen me një rrethim të madh të librarive ku shumica e algoritmeve standarde të përpunimit të të dhënave janë zbatuar tashmë.</p>
 </li>
 </ul>
-<p>Using clearly visible procedures that are <em>not</em> mingling with the data to be analyzed is the most efficient way to process data. This is the corner-stone of any approach to modern data processing.</p>
+<p>Përdorimi i procedurave të qarta të dukshme që <em>nuk</em> janë duke u bashkuar me të dhënat për t'u analizuar është mënyra më efikase për të përpunuar të dhënat. Kjo është baza i çdo qasjeje ndaj përpunimit modern të të dhënave.</p>
 
 </div>
 </div>
@@ -13107,10 +13107,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="10.2.-Loading-tables-from-local-Excel-files">10.2. Loading tables from local Excel files<a class="anchor-link" href="#10.2.-Loading-tables-from-local-Excel-files">&#182;</a></h2><p>Each Excel document consists of several <em>worksheets</em>. Each worksheet is a table which can be accessed through its name:</p>
+<h2 id="10.2.Ngarkimi-i-tabelave-nga-skedar&#235;t-lokal&#235;-t&#235;-Excel">10.2.Ngarkimi i tabelave nga skedar&#235;t lokal&#235; t&#235; Excel<a class="anchor-link" href="#10.2.Ngarkimi-i-tabelave-nga-skedar&#235;t-lokal&#235;-t&#235;-Excel">&#182;</a></h2><p>Çdo dokument i Excel përbëhet nga disa <em>worksheets</em>. Çdo fletë pune është një tabelë e cila mund të arrihet përmes emrit të saj:</p>
 <p><img src="pics/Excel.jpg" alt="Worksheets"></p>
-<p>Because Microsoft Excel is the most popular spreadsheet program in the world the <em>pandas</em> library has a way to load a worksheet of an Excel document into a DataFrame. If an Excel document consists of several worksheets, we have to load it as several DataFrames -- one DataFrame per worksheet.</p>
-<p>For example, the file <em>data/Additives.xlsx</em> has a single worksheet "E-numbers" which we load into a DataFrame straightforwardly:</p>
+<p>Për shkak se Microsoft Excel është programi më i popullarizuar i spreadsheet në botë, libraria <em>pandas</em> ka një mënyrë për të ngarkuar një fletë pune të një dokumenti Excel në një DataFrame. Nëse një dokument i Excel përbëhet nga disa fletë pune, ne duhet ta ngarkojmë atë si disa DataFrames - një DataFrame për fletë pune.</p>
+<p>Për shembull, skedari <em>data / Additives.xlsx</em> ka një fletë pune të vetme "E-numbers" të cilën e ngarkojmë në një DataFrame drejtpërdrejt:</p>
 
 </div>
 </div>
@@ -13132,7 +13132,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This file contains some basic information about additives, which are substances used in food industry to preserve food or enhance its color and taste. Let us peek at the table:</p>
+<p>Ky skedar përmban disa informacione themelore në lidhje me konservuesit, të cilat janë substanca të përdorura në industrinë ushqimore për të ruajtur ushqimin ose për të rritur ngjyrën dhe shijen e tij. Le të shohim në tabelë:</p>
 
 </div>
 </div>
@@ -13288,7 +13288,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The cells that were empty in the Excel table get a special <em>NaN</em> value, which stands for "not a number". Since in our case these cells represent comments, we wish the empty cells to remain empty. So, we shall reload the table, but this time instruct the system not to complain about empty cells:</p>
+<p>Qelizat që ishin bosh në tabelën Excel marrin një vlerë të veçantë <em>NaN</em>, e cila nënkupton "jo një numër". Meqenëse në rastin tonë këto qeliza përfaqësojnë komente, ne dëshirojmë që qelizat boshe të mbeten bosh. Pra, ne do të rimbushim tabelën, por këtë herë udhëzojmë që sistemi të mos raportojë për qelizat boshe:</p>
 
 </div>
 </div>
@@ -13445,7 +13445,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The option <code>na_filter=False</code> instructs the <code>read_excel</code> function to "switch off artificial intelligence" and leave empty cells empty. Let us make a frequency analysis based on the harmfulness of additives.</p>
+<p>Opsioni <code>na_filter = False</code> udhëzon funksionin<code>read_excel</code> që të "çaktivizojë inteligjencën artificiale" dhe t'i lërë qelizat boshe boshe. Le të bëjmë një analizë të frekuencës bazuar në dëmin e konservuesve.</p>
 
 </div>
 </div>
@@ -13490,7 +13490,7 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let us now filter the table to single out additives that may cause cancer:</p>
+<p>Le të filtrojmë tani tabelën për të veçuar konservuesit që mund të shkaktojnë kancer:</p>
 
 </div>
 </div>
@@ -13622,12 +13622,12 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally, let us list the additives that are marked as DANGEROUS or may cause cancer. To do so we have to combine two filtering criteria:</p>
+<p>Më në fund, le të rendisim konservuesit që shënohen si DANGEROUS ose mund të shkaktojnë kancer. Për ta bërë këtë, ne duhet të kombinojmë dy kritere të filtrimit:</p>
 
-<pre><code>Comment == "may cause cancer"  or  Status == "DANGEROUS" (or both)
+<pre><code>Comment == "may cause cancer"  ose  Status == "DANGEROUS" (ose të dyja)
 
 </code></pre>
-<p>When we have to combine two criteria so that a row is included in the filtered table if at least one of the criteria is satisfied, we use the <code>|</code> connector:</p>
+<p>Kur duhet të kombinojmë dy kritere në mënyrë që një rresht të përfshihet në tabelën e filtruar nëse të paktën njëri prej kritereve është i plotësuar, ne përdorim lidhësin <code>|</code>:</p>
 
 </div>
 </div>
@@ -13789,7 +13789,7 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="10.3.-Writing-tables-to-Excel-files">10.3. Writing tables to Excel files<a class="anchor-link" href="#10.3.-Writing-tables-to-Excel-files">&#182;</a></h2><p>Any table can be written into an Excel file just like we used to write them into <em>CSV</em> files. The only difference is that instead ot the <code>to_csv</code> funcion we invoke the <code>to_excel</code> function. For example, let us create a table containing the list of additives that are labelled by dangerous or may cause cancer:</p>
+<h2 id="10.3.-Shkrimi-i-tabelave-n&#235;-skedar&#235;t-Excel">10.3. Shkrimi i tabelave n&#235; skedar&#235;t Excel<a class="anchor-link" href="#10.3.-Shkrimi-i-tabelave-n&#235;-skedar&#235;t-Excel">&#182;</a></h2><p>Çdo tabelë mund të shkruhet në një skedar Excel ashtu si kemi përdorur për t'i shkruar ato në skedarë <em>CSV</em>. Dallimi i vetëm është se në vend të kësaj, funksioni <code>to_csv</code> ne thërrasim funksionin<code>to_excel</code>. Për shembull, le të krijojmë një tabelë që përmban listën e konservuesve që janë etiketuar nga të rrezikshëm ose mund të shkaktojnë kancer:</p>
 
 </div>
 </div>
@@ -13810,7 +13810,7 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>and let us write the table into an Excel file:</p>
+<p>dhe le të shkruajmë tabelën në një skedar Excel:</p>
 
 </div>
 </div>
@@ -13831,9 +13831,9 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's take a look at the Excel file we've just created:</p>
+<p>Le të hedhim një vështrim në skedarin Excel që sapo kemi krijuar:</p>
 <p><img src="pics/BadAdditives.jpg" alt="Excel file"></p>
-<p>We see that the system has also written the index column of the table, which in this case is just a list of meaningless integers. To get rid of it, we'll write the table again, but this time using the option <code>index=False</code>:</p>
+<p>Ne shohim që sistemi ka shkruar edhe kolonën e indeksit të tabelës, e cila në këtë rast është vetëm një listë e numrave të plotë të pakuptimtë. Për të hequr atë, ne do të shkruajmë përsëri tabelën, por kësaj radhe duke përdorur opsionin <code>index=False</code>:</p>
 
 </div>
 </div>
@@ -13854,9 +13854,9 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The new file looks like this:</p>
+<p>Skedari i ri duket si kjo:</p>
 <p><img src="pics/BadAdditives2.jpg" alt="Excel file"></p>
-<p>That's exactly what we wanted.</p>
+<p>Kjo është pikërisht ajo që kemi dashur.</p>
 
 </div>
 </div>
@@ -13864,16 +13864,16 @@ Name: Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="10.4.-Exercises">10.4. Exercises<a class="anchor-link" href="#10.4.-Exercises">&#182;</a></h2>
+<h2 id="10.4.-Ushtrime">10.4. Ushtrime<a class="anchor-link" href="#10.4.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> The file <code>data/CS201.xlsx</code> has an overview of marks of a group of students in Computer Science 201. The
-data is real, so the table is anonymized.</p>
-<p><em>(a)</em> Load this table into a DataFrame and take a look at the first few rows to understand the structure of the table ("Hnn" stands for "homework nn", "Cn" stands for "colloquim n", "WE" stands for "written part of the exam" and "OE" stands for "oral oart of the exam").</p>
+<p><strong>Ushtrimi 1.</strong>  Skedari <code>data / CS201.xlsx</code> ka një përmbledhje të notave të një grupi studentësh në Science Science 201.
+të dhënat janë reale, kështu që tabela është anonimizuar.</p>
+<p><em>(a)</em> Vendosni këtë tabelë në një DataFrame dhe hidhini një sy rreshtave të para për të kuptuar strukturën e tabelës ("Hnn" qëndron për "homework nn", "Cn" qëndron për "colloquim n", "WE" qëndron për "written part of the exam" dhe "OE" qëndron për "oral part of the exam").</p>
 
 </div>
 </div>
@@ -13881,7 +13881,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Index the table by "StudentID".</p>
+<p><em>(b)</em> Indekso tabelën me "StudentID".</p>
 
 </div>
 </div>
@@ -13889,7 +13889,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Compute the average mark on each of the colloquia (columns "C1", "C2" and "C3").</p>
+<p><em>(c)</em> Llogaritni notën mesatare në secilën prej kolonive (kolonat "C1", "C2" dhe "C3").</p>
 
 </div>
 </div>
@@ -13897,7 +13897,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Add a new column "Avg" and for each student compute the average mark and write it into the corresponding cell.</p>
+<p><em>(d)</em> Shtoni një kolonë të re "Avg" dhe për secilin student llogarit notën mesatare dhe shkruajeni atë në qelizën përkatëse.</p>
 
 </div>
 </div>
@@ -13905,7 +13905,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(e)</em> Add a new column "FinalGrade" and for each student compute the final grade based on the average mark using the following function:</p>
+<p><em>(e)</em> Shtoni një kolonë të re "FinalGrade" dhe për secilin student llogarit notën përfundimtare bazuar në notën mesatare duke përdorur funksionin e mëposhtëm:</p>
 
 </div>
 </div>
@@ -13936,7 +13936,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(f)</em> Write the new table into the Excel file <em>data/CS201-FinalGrades.xlsx</em></p>
+<p><em>(f)</em> Shkruajeni tabelën e re në skedarin Excel <em>data/CS201-FinalGrades.xlsx</em></p>
 
 </div>
 </div>
@@ -13944,9 +13944,9 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong> <em>Eurostat</em> is an official European agency in charge of the statistical analyses of various data relevant to the development of the European Union. All the data Eurostat collects is publicly available at the following link: <a href="https://ec.europa.eu/eurostat/data/database">https://ec.europa.eu/eurostat/data/database</a></p>
-<p>The file <em>data/EUProjPop.xlsx</em> contains the projection of the population of each of the EU countries 2080. The table has two worksheets: <em>Baseline</em> containing the projected population of the EU countries, and <em>Migration</em> containing the projected population of the EU countries in case of an increased migration.</p>
-<p><em>(a)</em> Load these two worksheets into to DataFrames (Baseline and Migration) and display a few rows of each table to understand the structure of the tables.</p>
+<p><strong>Ushtrimi 2.</strong> <em>Eurostat</em> është një agjenci zyrtare evropiane përgjegjëse për analizat statistikore të të dhënave të ndryshme që lidhen me zhvillimin e Bashkimit Evropian. Të gjitha të dhënat që mbledh Eurostat janë në dispozicion të publikut në lidhjen vijuese: <a href="https://ec.europa.eu/eurostat/data/database">https://ec.europa.eu/eurostat/data/database</a></p>
+<p>Skedari <em>data/EUProjPop.xlsx</em> përmban parashikimin e popullsisë së secilit prej vendeve të BE-së në  2080. Tabela ka dy fletë pune: <em>Baseline</em> që përmban popullsinë e parashikuar të vendeve të BE-së, dhe <em>Migration</em> që përmban popullsinë e parashikuar të vendeve të BE-së në rast të një rritje të migrimit.</p>
+<p><em>(a)</em> Vendosni këto dy fletë pune në DataFrames (Baseline dhe Migration) dhe shfaqni disa rreshta të secilës tabelë për të kuptuar strukturën e tabelave.</p>
 
 </div>
 </div>
@@ -13954,7 +13954,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Add a new row "EU" to each of the tables and compute the projected population of the entire union for each year.</p>
+<p><em>(b)</em> Shtoni një rresht të ri "EU" në secilën prej tabelave dhe llogaritni popullsinë e parashikuar të të gjithë bashkimit për çdo vit.</p>
 
 </div>
 </div>
@@ -13962,7 +13962,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Add a new row to the Migration table and compute the projected migration for each of the years (subtract the row EU in the Baseline table from the row EU in the Migration table).</p>
+<p><em>(c)</em> Shtoni një rresht të ri në tabelën e Migration dhe llogaritni migracionin e parashikuar për secilin prej viteve (zbritni rreshtin EU në tabelën Baseline nga rreshti EU në tabelën e Migration).</p>
 
 </div>
 </div>
@@ -13970,7 +13970,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Visualize the projected migration by a line chart.</p>
+<p><em>(d)</em> Vizualizoni migracionin e parashikuar me një grafik vijash.</p>
 
 </div>
 </div>
@@ -13978,7 +13978,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(e)</em> Add a new row "EU-UK" to the Baseline table and compute the projected population of EU without the UK.</p>
+<p><em>(e)</em> Shtoni një rresht të ri "EU-UK" në tabelën Baseline dhe llogaritni popullsinë e parashikuar të BE-së pa UK.</p>
 
 </div>
 </div>
@@ -13986,7 +13986,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(f)</em> Write the two DataFrames to <em>data/EU-UK.xlsx</em> and <em>data/EU-Migration.xlsx</em></p>
+<p><em>(f)</em> Shkruani të dy DataFrames në <em>data/EU-UK.xlsx</em> dhe <em>data/EU-Migration.xlsx</em></p>
 
 </div>
 </div>
@@ -13994,7 +13994,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> The file <code>data/Cricket.xlsx</code> contains the data about the best cricket players in the history of cricket.</p>
+<p><strong>Ushtrimi 3.</strong> Skedari <code>data/Cricket.xlsx</code> përmban të dhënat për lojtarët më të mirë të kriketit në historinë e kriketit.</p>
 
 </div>
 </div>
@@ -14002,7 +14002,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Load this table into a <em>DataFrame</em> and index it by the column "Player".</p>
+<p><em>(a)</em> Vendoseni këtë tabelë në një <em>DataFrame</em> dhe indeksojeni atë në kolonën "Player".</p>
 
 </div>
 </div>
@@ -14010,7 +14010,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Add new column "YP" (<em>Years Played</em>) to the table and compute the number of years of active playing for each player (subtract the column "From" from the column "To").</p>
+<p><em>(b)</em> Shtoni kolonën e re "YP" (<em>Years Played</em>) në tabelë dhe llogaritni numrin e viteve aktive për secilin lojtar (zbritni kolonën "From" nga kolona "To").</p>
 
 </div>
 </div>
@@ -14018,7 +14018,7 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Add new column "ARY" (<em>Average Runs per Year</em>) to the table and for each player compute the average number of runs per year (ARY = Runs / YP).</p>
+<p><em>(c)</em> Shtni një kolonë të te "ARY" (<em>Average Runs per Year</em>) në tabelë dhe për secilin lojtar llogarit numrin mesatar të drejtimeve në vit (ARY = Runs / YP).</p>
 
 </div>
 </div>
@@ -14026,17 +14026,13 @@ data is real, so the table is anonymized.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Sort the table by "ARY" in the descending oreder and display the first 25 rows of the table. In what century were most of the top 25 players playing actively? What do you thik why?</p>
+<p><em>(d)</em> Renditni tabelën sipas "ARY" në rendin zbritës dhe shfaqni 25 rreshtat e parë të tabelës. Në cilin shekull luheshin në mënyrë aktive shumica e 25 lojtarëve më të mirë? Pse e mendoni këtë?</p>
 
 </div>
 </div>
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  

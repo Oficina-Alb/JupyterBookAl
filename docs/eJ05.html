@@ -13073,14 +13073,14 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.-Frequency-analysis-and-pie-charts">5. Frequency analysis and pie charts<a class="anchor-link" href="#5.-Frequency-analysis-and-pie-charts">&#182;</a></h1><p>In this lecture you will learn:</p>
+<h1 id="5.-Analiza-e-frekuenc&#235;s-dhe-grafik&#235;t-pie">5. Analiza e frekuenc&#235;s dhe grafik&#235;t pie<a class="anchor-link" href="#5.-Analiza-e-frekuenc&#235;s-dhe-grafik&#235;t-pie">&#182;</a></h1><p>Në këtë leksion do të mësoni:</p>
 <ol>
-<li>how to perform a <em>frequency analysis</em> of a sequence of data (which is just a fancy name for a simple thing); and</li>
-<li>how to display data on a pie chart.</li>
+<li>si të kryhet një <em>analizë e frekuencës</em> e një sekuence të të dhënave (që është vetëm një emër i bukur për një gjë të thjeshtë); dhe</li>
+<li>si të shfaqen të dhënat në një grafik pie.</li>
 </ol>
 
 </div>
@@ -13089,8 +13089,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.1.-Frequency-analysis">5.1. Frequency analysis<a class="anchor-link" href="#5.1.-Frequency-analysis">&#182;</a></h2><p><em>Frequency analysis</em> of a sequence of values consists of counting how many times each value occurs in the sequence. As simple as that. The numbers that we get are called <em>frequences</em>. Nevertheless, this simple analysis can provide a significant insight into the problem we are interested in. It is even used in cryptoanalysis, but this is far beyond the scope of this handbok.</p>
-<p>For example there are 30 students in a class and their Maths marks are:</p>
+<h2 id="5.1.-Analiza-e-frekuenc&#235;s">5.1. Analiza e frekuenc&#235;s<a class="anchor-link" href="#5.1.-Analiza-e-frekuenc&#235;s">&#182;</a></h2><p><em>Analiza e frekuencës</em>  së një sekuence vlerash konsiston në llogaritjen e sa herë secila vlerë ndodh në sekuencë. Po aq e thjeshtë sa ajo. Numrat që marrim quhen <em>frekuenca</em>. Sidoqoftë, kjo analizë e thjeshtë mund të sigurojë një pasqyrë të rëndësishme për problemin për të cilin ne jemi të interesuar. Përdoret madje edhe në kriptoanalizë, por kjo është shumë larg sferës së kësaj kontrolli.</p>
+<p>Për shembull, ka 30 studentë në një klasë dhe notat e tyre të Matematikës janë:</p>
 
 </div>
 </div>
@@ -13111,7 +13111,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The frequency analysis of this sequence reduces to counting how many A's there are in the sequence, then how many B's, and so on. Instead of doing it by hand we'll let Python do it for us using the built-in function <code>count</code>:</p>
+<p>Analiza e frekuencës së kësaj sekuence zvogëlohet për të llogaritur sa A ka në sekuencë, atëherë sa B, etj. Në vend që ta bëjmë atë me dorë, ne do ta lejojmë Python ta bëjë atë për ne duke përdorur funksionin e integruar <code>count</code>:</p>
 
 </div>
 </div>
@@ -13165,7 +13165,7 @@ F -&gt; 1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The numbers we have thus obtained are <em>absolute frequencies</em>. Often we are interested in <em>relative frequencies</em>, which are absolute frequences expressed as a percentage.</p>
+<p>Numrat që kemi marrë në këtë mënyrë janë <em>frekuenca të përafërta</em>. Shpesh ne jemi të interesuar në frekuencat <em>relative</em>, që janë frekuenca absolute të shprehura si përqindje.</p>
 
 </div>
 </div>
@@ -13220,7 +13220,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Therefore, the frequency analysis can provide absolute frequences (how many times does a value occur in the sequence), but also the relative frequences, which are absolute frequences expressed as percentages.</p>
+<p>Prandaj, analiza e frekuencës mund të sigurojë frekuenca absolute (sa herë ndodh një vlerë në sekuencë), por edhe frekuencat relative, të cilat janë frekuenca absolute të shprehura si përqindje.</p>
 
 </div>
 </div>
@@ -13228,8 +13228,8 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.2.-Pie-charts">5.2. Pie charts<a class="anchor-link" href="#5.2.-Pie-charts">&#182;</a></h2><p>In situations where we are interested not so much in the absolute frequences, but more in the relative frequences (that is, we do not care much how many occurences there are, but what percentage that makes in the whole) it is convenient to visualize data as a <em>pie chart</em>. A pie chart is a circle divided into sectors (like a pie or a pizza). The circle then represents the whole (100%) and each sector represents the percentage of the value assigned to the sector.</p>
-<p>For example, here is the distribution of the marks from the example above:</p>
+<h2 id="5.2.-Grafik&#235;t-pie">5.2. Grafik&#235;t pie<a class="anchor-link" href="#5.2.-Grafik&#235;t-pie">&#182;</a></h2><p>Në situatat kur ne jemi të interesuar jo aq shumë për frekuencat absolute, por më shumë për frekuencat relative (d.m.th., ne nuk na intereson shumë se sa ndodhi ka, por çfarë përqindje që bën në tërësi) është i përshtatshëm për të vizualizuar të dhënat si një grafik <em>pie</em>. Një grafik pie është një rreth i ndarë në sektorë (si një byrek ose një pizza). Rrethi më pas përfaqëson tërësinë (100%) dhe secili sektor përfaqëson përqindjen e vlerës së caktuar për sektorin.</p>
+<p>Për shembull, këtu është shpërndarja e notave nga shembulli i mësipërm:</p>
 <table>
 <thead><tr>
 <th>Ocena</th>
@@ -13259,7 +13259,7 @@ F -&gt; 3.33%
 </tr>
 </tbody>
 </table>
-<p>Let us visualize this using a pie chart. Let us first load the library:</p>
+<p>Le ta vizualizojmë këtë duke përdorur një grafik pie. Le të ngarkojmë së pari librarinë:</p>
 
 </div>
 </div>
@@ -13280,7 +13280,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Then we represent the table as two lists:</p>
+<p>Pastaj ne paraqesin tabelën si dy lista:</p>
 
 </div>
 </div>
@@ -13302,7 +13302,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Function <code>pie</code> produces a pie chart. The first argument of <code>pie</code> is a list of numbers (frequences, relative of absolute), while the option <code>labels</code> provides labels of sectors:</p>
+<p>Funksioni <code>pie</code> prodhon një tabelë pie. Argumenti i parë i <code>pie</code> është një listë me numrat (frekuencat, relative e absolute), ndërsa opsioni <code>labels</code> ofron etiketat e sektorëve:</p>
 
 </div>
 </div>
@@ -13349,7 +13349,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If we wish to stress the number of A's in this class we can use the <code>explode</code> option which expects a sequence of decimal numbers between 0 and 1 which tells the <code>pie</code> function how much to slide the sector away from the center (0 = no sliding; the larger the number, the larger the sliding away from the center).</p>
+<p>Nëse dëshirojmë të theksojmë numrin e A-ve në këtë klasë mund të përdorim opsionin <code>explode</code> i cili pret një sekuencë të numrave dhjetorë midis 0 dhe 1 i cili i tregon funksionit <code>pie</code> sa për të rrëshqitur sektorin larg qendrës (0 = pa rrëshqitje; sa më i madh numri, aq më i madh rrëshqitja larg qendrës).</p>
 
 </div>
 </div>
@@ -13399,7 +13399,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As another example let us take a look at the structure of our atmosphere. Our atmosphere is a mixture of many gasses but the most dominant ones are:</p>
+<p>Si një shembull tjetër, le të hedhim një vështrim në strukturën e atmosferës sonë. Atmosfera jonë është një përzierje e shumë gazrave, por ato më dominuese janë:</p>
 <table>
 <thead><tr>
 <th>Gas</th>
@@ -13474,7 +13474,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We immediately see a problem: labels for the two tiny sectors overlap. To fix that we will slide them out using the <code>explode</code> option:</p>
+<p>Ne menjëherë shohim një problem: etiketat për dy sektorët e vegjël mbivendosen. Për të rregulluar se do t'i rrëshqasim duke përdorur opsionin <code>exlopde</code>:</p>
 
 </div>
 </div>
@@ -13524,14 +13524,14 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.3.-Exercises">5.3. Exercises<a class="anchor-link" href="#5.3.-Exercises">&#182;</a></h2>
+<h2 id="5.3.-Ushtrime">5.3. Ushtrime<a class="anchor-link" href="#5.3.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> Visualize the population of the continents by a pie chart:</p>
+<p><strong>Ushtrimi 1.</strong> Vizualizoni popullsinë e kontinenteve me një grafik pie:</p>
 <table>
 <thead><tr>
 <th>Continent</th>
@@ -13572,7 +13572,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong> Between 2006 and 2008 the market of optical storage media was a stage of the <em>high definition optical disc format war</em>. As HD became more and more popular, the need for a larger capacity optical disc emerged and the final battle for this market niche was fought between the Blu-ray Disc (BR) and HD-DVD. For more than two years the two formats had almost equal market share but then at the beginning of 2008 something strange happened -- within a week the situation changed drastically. The following table contains the market share of the two formats on January 5th, 2008 and seven days later:</p>
+<p><strong>Ushtrimi 2.</strong> Midis 2006 dhe 2008 tregu i mediave optike të depozitimit ishte në <em>fazën e formimit së lartësisë së definicionit të diskut optik war</em>. Ndërsa HD u bë gjithnjë e më i popullarizuar, u shfaq nevoja për një disk optik me kapacitet më të madh dhe beteja përfundimtare për këtë ngrohtë të tregut u luftua midis Blu-ray Disc (BR) dhe HD-DVD. Për më shumë se dy vjet të dy formatet kishin pothuajse të barabartë me pjesën e tregut, por më pas në fillim të vitit 2008 ndodhi diçka e çuditshme - brenda një jave situata ndryshoi në mënyrë drastike. Tabela e mëposhtme përmban pjesën e tregut të të dy formateve në 5 janar 2008 dhe shtatë ditë më vonë:</p>
 <table>
 <thead><tr>
 <th>Date</th>
@@ -13593,9 +13593,9 @@ F -&gt; 3.33%
 </tr>
 </tbody>
 </table>
-<p>So, after two years of bitter fighting Blu-ray won.</p>
-<p><em>(a)</em> Make two independent pie charts to visualize the market share of the two formats on January 5th, 2008 and on January 12th, 2008.</p>
-<p><em>(b*)</em> Search the Internet and try to find what happened in the week January 5-12th, 2008. (Hint: Has to do with Sony, who was a major proponent of Blu-ray Disc.)</p>
+<p>Kështu që, pas dy vjet luftimesh të hidhura Blu-ray fitoi.</p>
+<p><em>(a)</em> Bëni dy tabela të pavarura pie për të vizualizuar pjesën e tregut të të dy formateve në 5 janar 2008 dhe më 12 janar 2008.</p>
+<p><em>(b*)</em> Kërkoni në Internet dhe përpiquni të gjeni atë që ndodhi në javën 5-12 janar, 2008. (Këshillë: Ka të bëjë me Sony, i cili ishte një përkrahës kryesor i Blu-ray Disc.)</p>
 
 </div>
 </div>
@@ -13603,8 +13603,8 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> This is how you make the perfect lemonade: put a cup of warm water and a cup of sugar in a saucepan and stir until sugar dissolves completely; then add one cup of lemon juice and three cups of cold water.</p>
-<p>Compute the percentage of water, sugar and lemon juice in the perfect lemonade and make a pie chart in which the sugar is slightly separated from the other ingredients.</p>
+<p><strong>Ushtrimi 3.</strong> Kështu krijoni limonadën e përsosur: vendosni një filxhan me ujë të ngrohtë dhe një filxhan sheqer në një tigan dhe përzieni derisa sheqeri të treten plotësisht; më pas shtoni një filxhan lëng limoni dhe tre gota ujë të ftohtë.</p>
+<p>Llogaritni përqindjen e ujit, sheqerit dhe lëngut të limonit në limonadën e përsosur dhe bëni një grafik pie, në të cilën sheqeri ndahet pak nga përbërësit e tjerë.</p>
 
 </div>
 </div>
@@ -13612,7 +13612,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 4.</strong> Watching it rain in Macondo, Isabel decided to start a meteorogical diary. If it rained on Monday Isabel would write 1 into the diary; if it rained on Tuesday she would write 2 into the diary; then 3 for rainy Wednesdays and so on until 7 for rainy Sundays. In the end she got the following list of numbers for a year:</p>
+<p><strong>Ushtrimi 4.</strong> Duke parë shi në Macondo, Isabel vendosi të fillojë një ditar meteorologjik. Nëse binte shi të hënën, Isabel do të shkruante 1 në ditar; nëse binte shi ditën e martë ajo do të shkruante 2 në ditar; pastaj 3 për të Mërkurat me shi dhe kështu me radhë deri në 7 për të dielat me shi. Në fund ajo mori listën e mëposhtme të numrave për një vit:</p>
 
 </div>
 </div>
@@ -13637,7 +13637,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> How many rainy days did Isabel record?</p>
+<p><em>(a)</em> Sa ditë me shi regjistroi Isabel?</p>
 
 </div>
 </div>
@@ -13645,7 +13645,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> How many Mondays, Tuesdays and so on were there that year? Illustrate this by a pie chart.</p>
+<p><em>(b)</em> Sa të hëna, të marta dhe kështu me radhë ishin atje atë vit? Ilustroni këtë me një grafik pie.</p>
 
 </div>
 </div>
@@ -13653,7 +13653,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Which day of the week was the rainiest?</p>
+<p><em>(c)</em> Cila ditë e javës ishte me më shumë shi?</p>
 
 </div>
 </div>
@@ -13661,7 +13661,7 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 5.</strong> The cell below contains the first few decimals of $\pi$:</p>
+<p><strong>Ushtrimi 5.</strong> Qeliza më poshtë përmban disa decimale të para të $\pi$:</p>
 
 </div>
 </div>
@@ -13682,19 +13682,15 @@ F -&gt; 3.33%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> How many decimals of $\pi$ are there in the string?</p>
-<p><em>(b)</em> Make the frequency analysis of this string.</p>
-<p><em>(g)</em> Illustrate the outcome of the frequency analysis by a pie chart.</p>
+<p><em>(a)</em> Sa decimal $\pi$ ka në string?</p>
+<p><em>(b)</em> Bëni analizën e frekuencës së këtij vargu.</p>
+<p><em>(g)</em> lustroni rezultatin e analizës së frekuencës nga një tabelë pie.</p>
 
 </div>
 </div>
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  

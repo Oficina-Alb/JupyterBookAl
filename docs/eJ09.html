@@ -13073,15 +13073,15 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="9.-Sorting,-filtering-and-frequency-analysis">9. Sorting, filtering and frequency analysis<a class="anchor-link" href="#9.-Sorting,-filtering-and-frequency-analysis">&#182;</a></h1><p>In this lecture we demonstrate:</p>
+<h1 id="9.-Renditja,-filtrimi-dhe-analiza-e-frekuenc&#235;s">9. Renditja, filtrimi dhe analiza e frekuenc&#235;s<a class="anchor-link" href="#9.-Renditja,-filtrimi-dhe-analiza-e-frekuenc&#235;s">&#182;</a></h1><p>Në këtë leksion ne demonstrojmë:</p>
 <ol>
-<li>how to sort the rows of the table;</li>
-<li>how to filter out the rows of a table which satisfy some criterion; and</li>
-<li>how to perform frequency analysis on the rows of a table.</li>
+<li>si të renditni rreshtat e tabelës;</li>
+<li>si të filtrohen rreshtat e një tabele që plotësojnë disa kritere; dhe</li>
+<li>si të kryhet analiza e frekuencës në rreshtat e një tabele.</li>
 </ol>
 
 </div>
@@ -13090,7 +13090,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="9.1.-Sorting">9.1. Sorting<a class="anchor-link" href="#9.1.-Sorting">&#182;</a></h2><p>Recall that to sort a sequence means to order its members in an increasing (or decreasing) way. To sort the rows of a table means to rearrange the rows so that the values in a particular column are sorted. We shall now show how to quickly sort tables using the <em>pandas</em> library. Let us first load the library:</p>
+<h2 id="9.1.-Renditja">9.1. Renditja<a class="anchor-link" href="#9.1.-Renditja">&#182;</a></h2><p>Kujtoni se për të renditur një sekuencë do të thotë të rendisni anëtarët e saj në një mënyrë në rritje (ose në rënie). Të renditni rreshtat e një tabele do të thotë të rirregulloni rreshtat në mënyrë që vlerat në një kolonë të veçantë të renditen. Tani do të tregojmë se si të renditim shpejt tabelat duke përdorur bibliotekën <em>pandas</em>. Le të ngarkojmë së pari librarinö:</p>
 
 </div>
 </div>
@@ -13111,7 +13111,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Consider the example we have already analyzed in previous lectures:</p>
+<p>Shikoni shembullin që kemi analizuar tashmë në ligjëratat e mëparshme:</p>
 
 </div>
 </div>
@@ -13145,7 +13145,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The table looks like this:</p>
+<p>Tabela duket si kjo:</p>
 
 </div>
 </div>
@@ -13296,7 +13296,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The function <code>sort_values</code> sorts the rows of a table so that the values in a particular column are sorted. The name of the column that we want sorted is sometimes called the <em>sorting criterion</em>. We specify the sorting criterion using the option <code>by</code> like this:</p>
+<p>Funksioni <code>sort_values</code> rendit rreshtat e një tabele në mënyrë që vlerat në një kolonë të veçantë të renditen. Emri i kolonës që duam të renditemi quhet kriteri <em>sorting</em>. Ne specifikojmë kriterin e klasifikimit duke përdorur opsionin <code>by</code> si kjo:</p>
 
 </div>
 </div>
@@ -13448,7 +13448,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The default <em>sorting order</em> is <em>ascending</em>, which means that the rows of the table will be rearranged so that the values in the column "Height" increase. If we wish to sort the table so that the first row contains the highest student we have to invoke the function with an additional option <code>ascending=False</code>:</p>
+<p>Rendi i paracaktuar i renditjes_ është <em>ascending</em>, që do të thotë që rreshtat e tabelës do të riorganizohen në mënyrë që vlerat në kolonën "Height" të rriten. Nëse dëshirojmë të renditim tabelën në mënyrë që rreshti i parë të përmbajë studentin më të lartë, ne duhet të thërrasim funksionin me një opsion shtesë <code>ascending = False</code>:</p>
 
 </div>
 </div>
@@ -13600,7 +13600,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally, let us visualize the height and the weight of the students in the sorted table (note that the table is sorted by height, but that does not mean that the remaining columns are also sorted):</p>
+<p>Më në fund, le të vizualizojmë lartësinë dhe peshën e studentëve në tabelën e renditur (vini re se tabela është renditur sipas lartësisë, por kjo nuk do të thotë se kolonat e mbetura janë gjithashtu të renditura):</p>
 
 </div>
 </div>
@@ -13648,7 +13648,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="9.2.-Filtering-data">9.2. Filtering data<a class="anchor-link" href="#9.2.-Filtering-data">&#182;</a></h2><p>Quite often we have to go through a table and single out the rows that satisfy some criterion. For example, if we wish to focus on the data about females only, we can filter out these rows and package them into a new table like this:</p>
+<h2 id="9.2.-Filtrimi-i-t&#235;-dh&#235;nave">9.2. Filtrimi i t&#235; dh&#235;nave<a class="anchor-link" href="#9.2.-Filtrimi-i-t&#235;-dh&#235;nave">&#182;</a></h2><p>Shpesh duhet të kalojmë nëpër një tabelë dhe të veçojmë rreshtat që plotësojnë disa kritere. Për shembull, nëse dëshirojmë të përqendrohemi në të dhënat vetëm për femrat, ne mund t'i filtrojmë këto rreshta dhe t'i paketojmë ato në një tabelë të re si kjo:</p>
 
 <pre><code>girls = students_ix[students_ix.Sex == "f"]</code></pre>
 
@@ -13767,7 +13767,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This will sigle out students with more than 50 kg:</p>
+<p>Kjo do të veçojë studentët me peshë më shumë se 50 kg:</p>
 
 </div>
 </div>
@@ -13884,12 +13884,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also combine criteria. For example if want to focus on boys with not more than 55 kg, we have to combine two criteria:</p>
+<p>Ne gjithashtu mund të kombinojmë kriteret. Për shembull, nëse dëshirojmë të përqendrohemi te djemtë me peshë jo më shumë se 55 kg, duhet të kombinojmë dy kritere:</p>
 
-<pre><code>Weight &lt;= 55  and  Sex == "m".
+<pre><code>Weight &lt;= 55  dhe  Sex == "m".
 
 </code></pre>
-<p>The <code>pandas</code> library uses the symbol <code>&amp;</code> to combine criteria in cases both have to be satisfied:</p>
+<p>Libraria <code>pandas</code> përdor simbolin<code>&amp;</code>për të kombinuar kriteret në rastet kur të dy duhet të jenë të përmbushur:</p>
 
 </div>
 </div>
@@ -13985,7 +13985,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let us visualize the height and weight of these boys:</p>
+<p>Le të vizualizojmë gjatësinë dhe peshën e këtyre djemve:</p>
 
 </div>
 </div>
@@ -14034,15 +14034,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The file <em>data/LongestRiversOfEurope.csv</em> contains the list of the tlongest 25 rivers of Europe. This table has five columns:</p>
+<p>Skedari  <em>data / LongestRiversOfEurope.csv</em> përmban listën e 25 lumenjve më të gjatë në Evropë. Kjo tabelë ka pesë kolona:</p>
 <ul>
-<li>River = name of the river,</li>
-<li>Length = length of the river in km,</li>
-<li>Countries = a string with all the countries the river flows through,</li>
-<li>Mouth = the sea/ocean/lake the river flows into, and</li>
-<li>Via = "(directly)" if the river flows directly into the sea/ocean/lake; otherwise the name of the river through which it flows into the sea/ocean/lake.</li>
+<li>River = emri i lumit,</li>
+<li>Length = gjatësia e lumit në km,</li>
+<li>Countries = një varg me të gjitha vendet ku rrjedh lumi,</li>
+<li>Mouth = deti / oqeani / liqeni ku derdhet lumi, dhe</li>
+<li>Via = "(directly)" nëse lumi rrjedh direkt në det / oqean / liqen; përndryshe emri i lumit përmes të cilit derdhet në det / oqean / liqen.</li>
 </ul>
-<p>Let us load the file into a DataFrame, index it by column "River" and display the first few lines of the table:</p>
+<p>Le ta ngarkojmë skedarin në një DataFrame, ta indeksojmë atë me kolonën "River" dhe të shfaqim linjat e para të tabelës:</p>
 
 </div>
 </div>
@@ -14152,7 +14152,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The list of countries the river flows through is represented by a string. If we wish to filter out all the rivers flowing through, say, Germany, we have to check whether the string stored in <code>Countries</code> contains "Germany" as a substring:</p>
+<p>Lista e vendeve përmes të cilave rrjedh lumi përfaqësohet nga një string. Nëse dëshirojmë të filtrojmë të gjithë lumenjtë që rrjedhin, të themi, Gjermania, duhet të kontrollojmë nëse string i ruajtur në <code>Countries</code> përmban "Germany" si një substring:</p>
 
 </div>
 </div>
@@ -14254,7 +14254,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="9.3.-Frequency-analysis">9.3. Frequency analysis<a class="anchor-link" href="#9.3.-Frequency-analysis">&#182;</a></h2><p>Recall that <em>frequency analysis</em> boils down to counting how many times each value occurs in the sequence. The <code>pandas</code> library has a handy function <code>value_counts</code> that can to that for us. For example, let us count boys and girls in the above table:</p>
+<h2 id="9.3.-Analiza-e-frekuenc&#235;s">9.3. Analiza e frekuenc&#235;s<a class="anchor-link" href="#9.3.-Analiza-e-frekuenc&#235;s">&#182;</a></h2><p>Kujtoni që <em>frequency Analysis</em> shkurtohet për të llogaritur sa herë secila vlerë ndodh në sekuencë. Libraria <code>pandas</code> ka një funksion të dobishëm<code>value_counts</code> që mund ta bëj për ne. Për shembull, le të numërojmë djemtë dhe vajzat në tabelën e mësipërme:</p>
 
 </div>
 </div>
@@ -14297,8 +14297,9 @@ Name: Sex, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So <code>value_counts</code> found that in this table there are 6 rows having "f" in column "Sex" and 5 rows having "m" in column "Sex". Therefore, there are 6 girls and 5 boys in the group.</p>
-<p>When it comes to the age of students in the group we have the following situation:</p>
+<p>Pra <code>value_counts</code> zbuloi se në këtë tabelë ka 6 rreshta që kanë "f"në kolonën "Sex "dhe 5 rreshta që kanë "m" në kolonën "Sex". Prandaj, janë 6 vajza dhe 5 djem në grup.
+Pra <code>value_counts</code> zbuloi se në këtë tabelë ka 6 rreshta që kanë "f"në kolonën "Sex "dhe 5 rreshta që kanë "m" në kolonën "Sex". Prandaj, janë 6 vajza dhe 5 djem në grup.</p>
+<p>Kur bëhet fjalë për moshën e studentëve në grup kemi situatën e mëposhtme:Kur bëhet fjalë për moshën e studentëve në grup kemi situatën e mëposhtme:</p>
 
 </div>
 </div>
@@ -14342,8 +14343,8 @@ Name: Age, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are 4 students aged 15, 4 students aged 13 and 3 students aged 14.</p>
-<p>We can put the outcome of the <code>value_counts</code> function in a variable for further reference:</p>
+<p>Janë 4 studentë të moshës 15, 4 studentë të moshës 13 dhe 3 studentë të moshës 14 vjeç.</p>
+<p>Mund të vendosim rezultatin e funksionit <code>value_counts</code> në një variabël për referencë të mëtejshme:</p>
 
 </div>
 </div>
@@ -14387,17 +14388,17 @@ Name: Sex, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The we can easily get access to the items that have been identified in the column "Sex" and their frequences:</p>
+<p>Ne mund të kemi lehtësisht qasje në artikujt që janë identifikuar në kolonën "Sex" dhe frekuencat e tyre:</p>
 
 <pre><code>freq.index
 
 </code></pre>
-<p>gives the list of items, while</p>
+<p>jep listën e sendeve, ndërsa</p>
 
 <pre><code>freq.values
 
 </code></pre>
-<p>gives their frequences.</p>
+<p>jep frekuencat e tyre.</p>
 
 </div>
 </div>
@@ -14438,7 +14439,7 @@ Their frequences: [6 5]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The structure of the group according to the gender can be visualized like this:</p>
+<p>Struktura e grupit sipas gjinisë mund të vizualizohet kështu:</p>
 
 </div>
 </div>
@@ -14487,7 +14488,7 @@ Their frequences: [6 5]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Analogously, we can visualize the structure of the group by age:</p>
+<p>Në mënyrë analoge, ne mund të vizualizojmë strukturën e grupit sipas moshës:</p>
 
 </div>
 </div>
@@ -14535,12 +14536,12 @@ Their frequences: [6 5]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As a final example let us find the distribution of countries by continents. At the following URL</p>
+<p>Si një shembull i fundit le të gjejmë shpërndarjen e vendeve sipas kontinenteve. Në URL-në vijuese</p>
 
 <pre><code>https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv
 
 </code></pre>
-<p>you can find a publicly available list of all the countries in the world. Let us start by loading the list into a DataFrame:</p>
+<p>ju mund të gjeni një listë të disponueshme publikisht për të gjitha vendet në botë. Le të fillojmë duke ngarkuar listën në një DataFrame:</p>
 
 </div>
 </div>
@@ -14631,7 +14632,7 @@ Their frequences: [6 5]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The number of countries per continen can now be easily determined:</p>
+<p>Numri i vendeve për çdo kontinent tani mund të përcaktohet lehtësisht:</p>
 
 </div>
 </div>
@@ -14678,7 +14679,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>and visualized:</p>
+<p>dhe vizualizohet:</p>
 
 </div>
 </div>
@@ -14726,22 +14727,22 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="9.4.-Exercises">9.4. Exercises<a class="anchor-link" href="#9.4.-Exercises">&#182;</a></h2>
+<h2 id="9.4.-Ushtrime">9.4. Ushtrime<a class="anchor-link" href="#9.4.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> The file <em>data/LongestRiversOfEurope.csv</em> contains the list of the tlongest 25 rivers of Europe. This table has five columns:</p>
+<p><strong>Ushtrimi 1.</strong> Dosja <em>data / LongestRiversOfEurope.csv</em> përmban listën e 25 lumenjve më të gjatë në Evropë. Kjo tabelë ka pesë kolona:</p>
 <ul>
-<li>River = name of the river,</li>
-<li>Length = length of the river in km,</li>
-<li>Countries = a string with all the countries the river flows through,</li>
-<li>Mouth = the sea/ocean/lake the river flows into, and</li>
-<li>Via = "(directly)" if the river flows directly into the sea/ocean/lake; otherwise the name of the river through which it flows into the sea/ocean/lake.</li>
+<li>River = emri i lumit,</li>
+<li>Length = gjatësia e lumit në km,</li>
+<li>Countries = një varg me të gjitha vendet ku rrjedh lumi,</li>
+<li>Mouth = deti / oqeani / liqeni ku derdhet lumi, dhe</li>
+<li>Via = "(direkt)" nëse lumi rrjedh direkt në det / oqean / liqen; përndryshe emri i lumit përmes të cilit derdhet në det / oqean / liqen.</li>
 </ul>
-<p><em>(a)</em> Load the file into a DataFrame, index it by the column "River" and display the first few lines of the table.</p>
+<p><em> (a) </em> Vendosni skedarin në një DataFrame, indeksoni atë në kolonën "River" dhe shfaqni rreshtat e parë të tabelës.</p>
 
 </div>
 </div>
@@ -14749,7 +14750,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Sort the table by length so that the longest river in Europe is on the top.</p>
+<p><em>(b)</em> Renditni tabelën sipas gjatësisë në mënyrë që lumi më i gjatë në Evropë të jetë në majë.</p>
 
 </div>
 </div>
@@ -14757,7 +14758,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> How many of the longest 25 rivers of Europe flow through Russia, how many through Germany, and how many through Liechtenstein?</p>
+<p><em>(c)</em> Sa prej 25 lumenjve më të gjatë të Evropës rrjedhin nëpër Rusi, sa në Gjermani dhe sa përmes Lihtenshtajnit?</p>
 
 </div>
 </div>
@@ -14765,7 +14766,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> For a new table that consists only of those rivers that flow directly into a sea/ocean/lake, get rid of the row "Via" and write the table into the file <em>data/FLowDirectly.csv</em></p>
+<p><em>(d)</em> Për një tabelë të re që përbëhet vetëm nga ato lumenj që rrjedhin drejtpërdrejt në një det / oqean / liqen, hiqni rreshtin "Via" dhe shkruani tabelën në skedarin <em>data/FLowDirectly.csv</em></p>
 
 </div>
 </div>
@@ -14773,7 +14774,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong> Here are nutritive facts about some sea food:</p>
+<p><strong>Ushtrimi 2.</strong> Këtu janë fakte ushqyese për disa ushqime deti:</p>
 <table>
 <thead><tr>
 <th>Product (100g)</th>
@@ -14912,7 +14913,7 @@ Name: Region, dtype: int64</pre>
 </tr>
 </tbody>
 </table>
-<p>This table can be represented as a list like this:</p>
+<p>Kjo tabelë mund të përfaqësohet në një listë si kjo:</p>
 
 </div>
 </div>
@@ -14951,7 +14952,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Turn this list into a DataFrame, name the colums appropriately and index the table.</p>
+<p><em>(a)</em> Kthejeni këtë listë në një DataFrame, emërtoni kolonat siç duhet dhe indeksoni tabelën.</p>
 
 </div>
 </div>
@@ -14959,7 +14960,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Sort the table by nutritive value and visualize the data using a bar chart.</p>
+<p><em>(b)</em> Renditni tabelën sipas vlerës ushqyese dhe vizualizoni të dhënat duke përdorur një tabelë.</p>
 
 </div>
 </div>
@@ -14967,7 +14968,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Make the frequency analysis of this table according to the amount of carbohydrates and visualize you result by a pie chart.</p>
+<p><em>(c)</em> Bëni analizën e frekuencës së kësaj tabele sipas sasisë së karbohidrateve dhe vizualizoni rezultatin tuaj përmes një pie chart.</p>
 
 </div>
 </div>
@@ -14975,7 +14976,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Put all the sea food with no carbohydrates and less that 10 g of fats per 100 g into a new table.</p>
+<p><em>(d)</em> Vendosni të gjithë ushqimin e detit pa karbohidrate dhe më pak se 10 g yndyrna për 100 g në një tabelë të re.</p>
 
 </div>
 </div>
@@ -14983,8 +14984,8 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> At a PE lecture the students were practising long jumps. Each student had three tries and the data is collected in <em>LongJump.csv</em> available in the folder <em>data</em>. The first row of the file is the header.</p>
-<p><em>(a)</em> Load this file into a <em>DataFrame</em>.</p>
+<p><strong>Ushtrimi 3.</strong> Në një leksion të PE studentët praktikonin kërcime të gjata. Secili student kishte tre prova dhe të dhënat mblidhen në <em>LongJump.csv</em> të disponueshme në dosjen <em>data</em>. Rreshti i parë i skedarit është header.</p>
+<p><em>(a)</em> Ngarkoje në një <em>DataFrame</em>.</p>
 
 </div>
 </div>
@@ -14992,7 +14993,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Add a new column "Max" to the table and for each student compute the best jump.</p>
+<p><em>(b)</em> Shtoni një tabelë të re "Max" në tabelë dhe për secilin student llogarit kërcimin më të mirë.</p>
 
 </div>
 </div>
@@ -15000,7 +15001,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Sort the table by "Max" and display the first five rows of the sorted table.</p>
+<p><em>(c)</em> Renditni tabelën sipas "Max" dhe tregoni pesë rreshtat e parë të tabelës së renditur.</p>
 
 </div>
 </div>
@@ -15008,7 +15009,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> SIngle out those students who have made at least one foul jump. Foul jumps are recorded as 0.</p>
+<p><em>(d)</em> Gjeni ata studentë që kanë bërë të paktën një kërcim faull. Hedhjet e gabimeve regjistrohen si 0.</p>
 
 </div>
 </div>
@@ -15016,7 +15017,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 4.</strong> The following list contains some basic information about a group of students: last name, first name, student ID, the class they attend and the average of their marks:</p>
+<p><strong>Ushtrimi 4.</strong> Lista e mëposhtme përmban disa informacione themelore për një grup studentësh: mbiemrin, emrin, emrin e studentit, klasën ku marrin pjesë dhe mesataren e notave të tyre:</p>
 
 </div>
 </div>
@@ -15047,7 +15048,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Turn this into a <em>DataFrame</em>.</p>
+<p><em>(a)</em> Kthejeni në një <em>DataFrame</em>.</p>
 
 </div>
 </div>
@@ -15055,7 +15056,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Visualize the gender structure of the group by a pie chart.</p>
+<p>_(b)_Vizualizoni strukturën gjinore të grupit me një tabelë pie.</p>
 
 </div>
 </div>
@@ -15063,7 +15064,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Visualize the age structure of the group by a pie chart (base your analysis on the class the student attends).</p>
+<p><em>(c)</em> Vizualizoni strukturën moshore të grupit me një tabelë pie (bazoni analizën tuaj në klasën ku merr pjesë studenti).</p>
 
 </div>
 </div>
@@ -15071,7 +15072,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Which column is the best choice for an index column?</p>
+<p><em>(d)</em> Cila kolonë është zgjidhja më e mirë për një kolonë indeksi?</p>
 
 </div>
 </div>
@@ -15079,7 +15080,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(e)</em> Put all the students of the 8th grade into a new table.</p>
+<p><em>(e)</em> Vendosni të gjithë nxënësit e klasës së 8-të në një tabelë të re.</p>
 
 </div>
 </div>
@@ -15087,7 +15088,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(f)</em> Put all the boys whose average mark is less that 4.50 into a new table.</p>
+<p><em>(f)</em> Vendosni të gjithë djemtë, nota mesatare e të cilëve është më pak se 4.50 në një tabelë të re.</p>
 
 </div>
 </div>
@@ -15095,21 +15096,21 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Zadatak 6.</strong> At the following URL:</p>
+<p><strong>Ushtrimi 5.</strong> Në URL më poshtë:</p>
 
 <pre><code>https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv
 
 </code></pre>
-<p>you can find a publicly available table with the list of all the countries in the world and some parameters of the economic development for each country. The table has the six columns:</p>
+<p>mund të gjeni një tabelë në dispozicion të publikut me listën e të gjitha vendeve në botë dhe disa parametra të zhvillimit ekonomik për secilin vend. Tabela ka gjashtë kolonat:</p>
 <ul>
 <li>country</li>
-<li>year = the year in which the economic parameters were computed</li>
+<li>year = viti në të cilin llogariten parametrat ekonomikë</li>
 <li>pop = population</li>
 <li>continent</li>
-<li>lifeExp = life expextancy</li>
-<li>gdpPercap = GDP per capitem</li>
+<li>lifeExp = jetegjatësia</li>
+<li>gdpPercap = GDP per popullsi</li>
 </ul>
-<p><em>(a)</em> Load this table into a <em>DataFrame</em>.</p>
+<p><em>(a)</em> Ngarkoje këtë tabelë në një <em>DataFrame</em>.</p>
 
 </div>
 </div>
@@ -15117,7 +15118,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(b)</em> Put all the data that refers to your country into a new table (use a filtering criterion like this: <code>table[table.country == "Serbia"]</code>) and write it to a file.</p>
+<p><em>(b)</em> Vendosni të gjitha të dhënat që i referohen vendit tuaj në një tabelë të re (përdorni një kriter filtrimi si ky: <code>table[table.country == "Serbia"]</code>) dhe shkraujeni në një skedar.</p>
 
 </div>
 </div>
@@ -15125,7 +15126,7 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(c)</em> Display the change of the life expectancy of your country in time by a line chart.</p>
+<p><em>(c)</em> Shfaqni ndryshimin e jetëgjatësisë së vendit tuaj në kohë me një grafik vijash</p>
 
 </div>
 </div>
@@ -15133,17 +15134,13 @@ Name: Region, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(d)</em> Display the change in GDP in your country by a bar chart.</p>
+<p><em>(d)</em> Shfaqni ndryshimet në PBB në vendin tuaj me një tabelë me kolona.</p>
 
 </div>
 </div>
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  

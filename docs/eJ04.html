@@ -13073,16 +13073,16 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="4.-The-average-and-the-median-of-a-sequence-of-numbers">4. The average and the median of a sequence of numbers<a class="anchor-link" href="#4.-The-average-and-the-median-of-a-sequence-of-numbers">&#182;</a></h1><p>In this lecture you will learn:</p>
+<h1 id="4.-Mesatarja-dhe-mediani-e-nj&#235;-sekuence-numrash">4. Mesatarja dhe mediani e nj&#235; sekuence numrash<a class="anchor-link" href="#4.-Mesatarja-dhe-mediani-e-nj&#235;-sekuence-numrash">&#182;</a></h1><p>Në këtë leksion do të mësoni:</p>
 <ol>
-<li>how to compute an average of a sequence of numbers;</li>
-<li>how to sort a sequence of numbers and find its median;</li>
-<li>how to filter data; and</li>
-<li>how to visualize a sequence of numbers together with its average, or its median.</li>
+<li>si të llogarisim një mesatare të një sekuence numrash;</li>
+<li>si të renditni një sekuencë të numrave dhe të gjeni median e saj;</li>
+<li>si të filtrohen të dhënat; dhe</li>
+<li>si të vizualizoni një rend të numrave së bashku me mesataren e tij, ose median e tij.</li>
 </ol>
 
 </div>
@@ -13091,18 +13091,18 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.1.-The-average-of-a-sequence-of-numbers">4.1. The average of a sequence of numbers<a class="anchor-link" href="#4.1.-The-average-of-a-sequence-of-numbers">&#182;</a></h2>
+<h2 id="4.1.-Mesatarja-e-nj&#235;-sekuence-numrash">4.1. Mesatarja e nj&#235; sekuence numrash<a class="anchor-link" href="#4.1.-Mesatarja-e-nj&#235;-sekuence-numrash">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are many situations where it is convenient to represent a sequence of numbers by some <em>typical value</em>. For example, students in Serbia get marks in several subjects, but at the end of the school year the educational system would like to have the achievement of each student represented by a single number.</p>
-<p>It turns out that a good representative of a sequence of numbers is a number that is "in the middle," and one possibility od defining "the middle" is the <em>average value</em> of the sequence:</p>
+<p>Ka shumë situata kur është i përshtatshëm të përfaqësosh një sekuencë të numrave me disa vlera <em>tipike</em>. Për shembull, studentët në Serbi marrin nota në disa lëndë, por në fund të vitit shkollor sistemi arsimor do të donte të kishte arritjet e secilit student të përfaqësuar nga një numër i vetëm.</p>
+<p>Rezulton se një përfaqësues i mirë i një sekuence numrash është një numër që është "në mes" dhe një mundësi që përcakton "mesin" është vlera <em>mesatare</em> e sekuencës:</p>
 $$
   \hbox{average value of } [x_1, x_2, \dots, x_n] = \frac{x_1 + x_2 + \dots + x_n}{n}.
-$$<p>Therefore, in order to compute the average value of the sequence we have to divide the sum of the sequence by the length of the sequence. Both of these activities can be easily executed in Python by invoking the predefined functions <code>len</code> which computes the length of the sequence, and <code>sum</code> which computes the sum of the sequence:</p>
+$$<p>Prandaj, për të llogaritur vlerën mesatare të sekuencës duhet të ndajmë shumën e sekuencës sipas gjatësisë së sekuencës. Të dy këto aktivitete mund të ekzekutohen lehtësisht në Python duke thirrur funksionet e paracaktuara <code>len</code> e cila llogarit gjatësinë e sekuencës, dhe<code>sum</code> që llogarit shumën e sekuencës:</p>
 
 </div>
 </div>
@@ -13144,47 +13144,23 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>(Note that the two functions are "built into" the Python interpreter and hence there is no need to hunt for them through libraries of functions!)</p>
-<p>Therefore, the average of a sequence of numbers can be computed as follows:</p>
+<p>(Vini re se të dy funksionet janë "ndërtuar" në interpretuesin e Python dhe kështu nuk ka nevojë të kërkoni për to përmes librarive të funksioneve!)</p>
+<p>Prandaj, mesatarja e një sekuence numrash mund të llogaritet si më poshtë:</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average value of&quot;</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The average value of [1, 3, 5, 7, 9, 10] is 5.833333333333333
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this course we shall have to compute the average values quite often. So it pays off to define a new function that does it for us. Defining new functions in Python is easy: in order to <code>def</code>ine the function <code>average</code> that operates on a list of numbers <code>L</code> we simply have to instruct the system to <code>return</code> the quotient of the sum of the list and the length of the list:</p>
+
+</div>
+</div>
+</div>print("Vlera mesatare e", L, "është", sum(L) / len(L))
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Në këtë kurs duhet të llogaritim shpesh vlerat mesatare. Pra, është e dobishme për të përcaktuar një funksion të ri që e bën atë për ne. Përcaktimi i funksioneve të reja në Python është i lehtë: në mënyrë që të "përcaktojmë" funksionin "mesatar" që funksionon në një listë numrash <code>L</code>, thjesht duhet të udhëzojmë sistemin që<code>të kthehet</code> sasinë e shumës së listës dhe gjatësia e listës:</p>
 
 </div>
 </div>
@@ -13206,9 +13182,9 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This Python code has introduced into the system a definition of a new activity: function <code>average</code> takes a list <code>L</code> of numbers and then returns the average of the list.</p>
-<p>Note that the Python instructions that explain what the function actually does (the so-called <em>function body</em>) has to be indented by 4 blanks.</p>
-<p>Let's see out function in action:</p>
+<p>Ky kod Python ka futur në sistem një përkufizim të një aktiviteti të ri: funksioni <code>avarage</code> merr një listë<code>L</code> të numrave dhe më pas kthen mesataren e listës.</p>
+<p>Vini re se udhëzimet e Python që shpjegojnë se çfarë funksioni bën në të vërtetë (i ashtuquajturi <em>trupi i funksionit</em>) duhet të zbritet nga 4 boshllëqe.</p>
+<p>Le ta shohim funksionin në veprim:</p>
 
 </div>
 </div>
@@ -13219,7 +13195,7 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">some_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average of the numers you have entered is&quot;</span><span class="p">,</span> <span class="n">average</span><span class="p">(</span><span class="n">some_numbers</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mesatarja e numrave që keni futur është&quot;</span><span class="p">,</span> <span class="n">average</span><span class="p">(</span><span class="n">some_numbers</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13248,7 +13224,7 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In many real-world applications the average value may turn out to be quite unpleasant to look at. It has become customary to round off the average value to, say, two decimal places. There is a function in Python that can do just that: <code>round(x, n)</code> will round off the decimal number <code>x</code> to <code>n</code> decimal places. For example:</p>
+<p>Në shumë aplikime të botës reale, vlera mesatare mund të rezultojë të jetë mjaft e pakëndshme për tu parë. Është bërë zakon që të rrumbullakoset vlera mesatare, për të thënë, në dy vende dhjetore. Ekziston një funksion në Python që mund të bëjë vetëm këtë: <code>round (x, n)</code> do të rrumbullakosë numrin dhjetor <code>x</code> në<code>n</code> vendet dhjetore. Për shembull:</p>
 
 </div>
 </div>
@@ -13289,7 +13265,7 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Thus, in many cases it makes sense to write the following code:</p>
+<p>Kështu, në shumë raste ka kuptim të shkruhet kodi i mëposhtëm:</p>
 
 </div>
 </div>
@@ -13299,7 +13275,7 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average of the numers you have entered is&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">average</span><span class="p">(</span><span class="n">some_numbers</span><span class="p">),</span> <span class="mi">2</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mesatarja e numrave që keni futur është&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">average</span><span class="p">(</span><span class="n">some_numbers</span><span class="p">),</span> <span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13328,17 +13304,17 @@ $$<p>Therefore, in order to compute the average value of the sequence we have to
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.2.-Sorting-a-list-of-numbers-and-computing-its-median">4.2. Sorting a list of numbers and computing its median<a class="anchor-link" href="#4.2.-Sorting-a-list-of-numbers-and-computing-its-median">&#182;</a></h2>
+<h2 id="4.2.-Renditja-e-nj&#235;-liste-t&#235;-numrave-dhe-llogaritja-e-median">4.2. Renditja e nj&#235; liste t&#235; numrave dhe llogaritja e median<a class="anchor-link" href="#4.2.-Renditja-e-nj&#235;-liste-t&#235;-numrave-dhe-llogaritja-e-median">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To sort a sequence means to order its members in an increasing (or decreasing) way, like this:</p>
+<p>Të renditësh një sekuencë do të thotë të vendosësh anëtarët e saj në një mënyrë në rritje (ose në rënie), si kjo:</p>
 $$
    [3, 1, 2, 5, 0, -1, 4] \to [-1, 0, 1, 2, 3, 4, 5]
-$$<p>The built-in function <code>sort</code> can sort a list of numbers and you should invoke it like this:</p>
+$$<p>Funksioni i integruar <code>sort</code> mund të rendisë një listë numrash dhe duhet ta thërrasni atë si kjo:</p>
 
 </div>
 </div>
@@ -13360,7 +13336,7 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you now check the value of <code>L</code> you'll see that the elements of the list have been ordered:</p>
+<p>Nëse kontrolloni tani vlerën e <code>L</code>, do të shihni që elementët e listës janë sistemuar:</p>
 
 </div>
 </div>
@@ -13401,7 +13377,7 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you wish to order the elements of <code>L</code> in the reverse order (starting from the largest element) you can do it by throwing in an option <code>reverse=True</code>:</p>
+<p>Nëse dëshironi të renditni elementët e <code>L</code> në rend të kundërt (duke filluar nga elementi më i madh) mund ta bëni duke hedhur në një opsion<code>reverse = True</code>:</p>
 
 </div>
 </div>
@@ -13443,8 +13419,8 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If the numbers we are working with oscillate a lot it may happen that the average is <em>not a good representative</em> of the sequence. This is why the <em>median</em> of a sequence is often used as another way to get the "number in the middle of the sequence".</p>
-<p>A <em>median</em> of a sequence of numbers is the element at the middle position of the sorted sequence.</p>
+<p>Nëse numrat që ne po punojmë me oscilojnë shumë mund të ndodhë që mesatarja të mos jetë një përfaqësues i mirë i sekuencës. Kjo është arsyeja pse <em>median</em> e një sekuence shpesh përdoret si mënyrë tjetër për të marrë "numrin në mes të sekuencës".</p>
+<p>Një <em>median</em> i një sekuence numrash është elementi në pozicionin e mesëm të sekuencës së renditur.</p>
 
 </div>
 </div>
@@ -13468,8 +13444,8 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here is an example where the median of the sequence turns out to be a much better representative of the "middle value" of the sequence that the average value.</p>
-<p>The list <code>salaries</code> contains salaries (in US dollars) of employees in a company.</p>
+<p>Këtu është një shembull ku median i sekuencës rezulton të jetë një përfaqësues shumë më i mirë i "vlerës së mesme" të sekuencës se vlera mesatare.</p>
+<p>Lista <code>salaries</code> përmban pagat (në dollarë amerikanë) të të punësuarve në një kompani.</p>
 
 </div>
 </div>
@@ -13490,7 +13466,7 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This list has over 10,000 numbers:</p>
+<p>Kjo listë ka mbi 10,000 numra:</p>
 
 </div>
 </div>
@@ -13531,7 +13507,7 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The average salary in the company is:</p>
+<p>Paga mesatare në kompani është:</p>
 
 </div>
 </div>
@@ -13568,15 +13544,7 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>However, the median of this list is:</p>
-
-</div>
-</div>
-</div>
+</div>Por, median në këtë listë është:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
@@ -13613,8 +13581,8 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Hmmm... The average salary in the company is around \$3912, but the median salary is only \\$600. It means that half of the employees earn \$600 or less per month. How is that possible?</p>
-<p>To find out, we have to analyze data in more detail.</p>
+<p>Hmmm ... Paga mesatare në kompani është rreth \ 3912 $, por paga mesatare është vetëm \\ 600 $. Do të thotë që gjysma e të punësuarve fitojnë $ \ $ 600 ose më pak në muaj. Si eshte e mundur?</p>
+<p>Për ta zbuluar, ne duhet të analizojmë të dhënat në detaje.</p>
 
 </div>
 </div>
@@ -13622,23 +13590,23 @@ $$<p>The built-in function <code>sort</code> can sort a list of numbers and you 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.3.-Filtering-data">4.3. Filtering data<a class="anchor-link" href="#4.3.-Filtering-data">&#182;</a></h2>
+<h2 id="4.3.-Filtrimi-i-t&#235;-dh&#235;nave">4.3. Filtrimi i t&#235; dh&#235;nave<a class="anchor-link" href="#4.3.-Filtrimi-i-t&#235;-dh&#235;nave">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>Filtering data</em> is a process through which from a set of data we extract those that we find relevant or interesting.</p>
-<p>To understand what is really going on the the above example and how come that the average salary is more than six times the median salary, we shall start by <em>filtering</em> the salaries that are above average. Filtering data represented as lists is very easy in Python -- just use the following construct:</p>
+<p><em>Filterimi i të dhënave</em> është një proces përmes të cilit nga një grup i të dhënave ne nxjerrim ato që i konsiderojmë të rëndësishme ose interesante.</p>
+<p>Për të kuptuar se çfarë po ndodh vërtet në shembullin e mësipërm dhe si vjen se paga mesatare është më shumë se gjashtë herë paga mesatare, do të fillojmë me <em>filtering</em> pagat që janë mbi mesataren. Filtrimi i të dhënave të paraqitura si lista është shumë i lehtë në Python - thjesht përdorni konstruksionin e mëposhtëm:</p>
 
 <pre><code>[x for x in List if Condition(x)]
 
 </code></pre>
-<p>This construct collects all the elements of <code>List</code> that fulfil the <code>Condition</code> and puts them in a new list. In Maths you would write the same thing like this:</p>
+<p>Ky konstruksion mbledh të gjithë elementët e 'List' që plotësojnë 'Condition' dhe i vendos ato në një listë të re. Në Matematikë do të shkruanit të njëjtën gjë si kjo:</p>
 $$
   \{x \mid x \in \mathrm{List} \land \mathrm{Condition}(x) \}
-$$<p>So, let's filter out the salaries that are above the average:</p>
+$$<p>Pra, le të filtrojmë pagat që janë mbi mesataren:</p>
 
 </div>
 </div>
@@ -13660,7 +13628,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So, this is the list of all the salaries that are above the average:</p>
+<p>Pra, kjo është lista e të gjitha pagave që janë mbi mesataren:</p>
 
 </div>
 </div>
@@ -13712,7 +13680,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>and there are only this many of them:</p>
+<p>dhe ka shumë prej tyre:</p>
 
 </div>
 </div>
@@ -13753,8 +13721,8 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Everything is clear now. In this company there are 12 employees with <em>huge salaries</em> while the remaining 10,000 employees have salaries which are far below the average salary. These 12 huge salaries push the average salary in the company close to \$4000 justifying the claim that the "average monthly salary is actually not bad" although the reality is much worse.</p>
-<p>This is typical example of a situation in which the data oscillate wildly and we have to put extra effort in understanding what is really going on. A big discrepancy between the average and the median of a sequence is usually an indicator of such a situation.</p>
+<p>Gjithçka është e qartë tani. Në këtë kompani ka 12 të punësuar me pagat e mëdha_ ndërsa 10,000 të punësuar të tjerë kanë paga që janë shumë më pak se paga mesatare. Këto 12 paga të mëdha shtyjnë pagën mesatare në kompani afër $ 4000 $ duke justifikuar pretendimin se "paga mesatare mujore në fakt nuk është e keqe" edhe pse realiteti është shumë më i keq.</p>
+<p>Ky është shembulli tipik i një situate në të cilën të dhënat luhaten në mënyrë të egër dhe ne duhet të bëjmë përpjekje shtesë për të kuptuar se çfarë po ndodh vërtet. Një mospërputhje e madhe mes mesatares dhe median të një sekuence është zakonisht një tregues i një situate të tillë.</p>
 
 </div>
 </div>
@@ -13762,14 +13730,14 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.4.-Visualizing-data-together-with-its-average-or-median">4.4. Visualizing data together with its average or median<a class="anchor-link" href="#4.4.-Visualizing-data-together-with-its-average-or-median">&#182;</a></h2>
+<h2 id="4.4.-Vizualizimi-i-t&#235;-dh&#235;nave-s&#235;-bashku-me-mesataren-e-tij-ose-median">4.4. Vizualizimi i t&#235; dh&#235;nave s&#235; bashku me mesataren e tij ose median<a class="anchor-link" href="#4.4.-Vizualizimi-i-t&#235;-dh&#235;nave-s&#235;-bashku-me-mesataren-e-tij-ose-median">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let us go back to the student from the previous lecture whose marks were:</p>
+<p>Le të kthehemi te studenti nga klasa e mëparshme, shenjat e të cilit ishin:</p>
 <table>
 <thead><tr>
 <th>Subject</th>
@@ -13829,7 +13797,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this exercise we would like to make a chart on which both individual marks and the average mark are displayed, so that we can see which marks are below the average achievemtn of the student. We start by loading the plotting library:</p>
+<p>Në këtë ushtrim do të dëshironim të bëjmë një tabelë në të cilën shfaqen të dy shenjat individuale dhe ajo mesatare, në mënyrë që të shohim se cilat nota janë nën nivelin e arritur mesatare të studentit. Ne fillojmë duke ngarkuar librarinë e komplotimeve:</p>
 
 </div>
 </div>
@@ -13850,7 +13818,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We have already seen how to plot a bar chart with individual marks:</p>
+<p>Tashmë kemi parë se si të planifikojmë një tabelë me shenja individuale:</p>
 
 </div>
 </div>
@@ -13897,7 +13865,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We would now like to add a line representing the average mark to the diagram. We shall first compute the average mark:</p>
+<p>Tani do të dëshironim të shtonim një vijë që paraqet shenjën mesatare në diagram. Së pari do të llogarisim notën mesatare:</p>
 
 </div>
 </div>
@@ -13918,7 +13886,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>and then plot a sequence of data that looks like this:</p>
+<p>dhe pastaj komplotoni një sekuencë të të dhënave që duket si kjo:</p>
 <p><code>[am, am, am, am, am, am, am]</code>]`</p>
 
 </div>
@@ -13967,11 +13935,11 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If we have to create a list of length <code>n</code> containing the same number <code>s</code> we can write</p>
+<p>Nëse duhet të krijojmë një listë të gjatësisë <code>n</code> që përmban të njëjtin numër <code>s</code> mund të shkruajmë</p>
 <p><code>[s, s, s, (etc n times)]</code></p>
-<p>as we did above, but we can also do it in a more consice and clever way like this:</p>
+<p>siç bëmë më lart, por gjithashtu mund ta bëjmë atë në një mënyrë më të përmbledhur dhe më të zgjuar si kjo:</p>
 <p><code>[s]*n</code></p>
-<p>Multiplying a list by a number <code>n</code> in Python as above produces a larger list which contains <code>n</code> copies of the original list. We thus get the following "more elegant" version of the code to plot the diagram:</p>
+<p>Shumëzimi i një liste nga një numër <code>n</code> në Python si më lart prodhon një listë më të madhe e cila përmban <code>n</code>  kopje të listës origjinale. Kështu marrim versionin e mëparshëm "më elegant" të kodit për të hartuar diagramin:</p>
 
 </div>
 </div>
@@ -14019,7 +13987,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As the icing on the cake, let us also add a legend to the chart:</p>
+<p>Si qershia në tortë, le të shtojmë edhe një legjendë në tabelë:</p>
 
 </div>
 </div>
@@ -14068,7 +14036,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let us now visualize the salaries in the company we have been discussing. As we have seen the list <code>salaries</code> is a big one, so <em>this may take some time. Courage and patience, my friend!</em></p>
+<p>Le të vizualizojmë tani pagat në kompaninë që kemi diskutuar. Siç kemi parë lista <code>salaries</code> është e madhe, kështu që kjo mund të zgjasë ca kohë. Guxim dhe durim, shoku im! _</p>
 
 </div>
 </div>
@@ -14114,8 +14082,8 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Well, this is really bad...</p>
-<p>In order to get a chart that resembles reality we will have to resize the chart and limit the values that we represent on the $y$-axis. We already know that the average salary in the company is around \$3912 and that onlu 12 employees have the salary which is above the average. We shall, therefore, limit the $y$-values to the interval 0--6000 and at the same time display the average salary as a red line.</p>
+<p>Epo, kjo është vërtet keq ...</p>
+<p>Për të marrë një tabelë që i ngjan realitetit do të duhet të ndryshojmë madhësinë e grafikut dhe të kufizojmë vlerat që përfaqësojmë në yaksinë. Tashmë ne e dimë se paga mesatare në kompani është rreth 3912 dollarë dhe se 12 punonjës kanë një pagë që është mbi mesataren. Prandaj, do t'i kufizojmë pikat y në intervalin 0--6000 dhe në të njëjtën kohë do të shfaqim pagën mesatare si një linjë të kuqe.</p>
 
 </div>
 </div>
@@ -14164,8 +14132,8 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One look at this chart suffices to conclude that the enormous salaries of a few employees have pushed the average salary to \$3912, while most of the other salaries are far below the average.</p>
-<p>Let us now create another chart where we display the median by a red bar.</p>
+<p>Një vështrim në këtë tabelë mjafton për të arritur në përfundimin se pagat e mëdha të disa punonjësve kanë shtyrë pagën mesatare në $ 3912, ndërsa shumica e pagave të tjera janë shumë më poshtë se mesatarja.</p>
+<p>Le të krijojmë tani një tabelë tjetër ku shfaqim mesataren nga një shirit i kuq.</p>
 
 </div>
 </div>
@@ -14214,8 +14182,8 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>OK, now, where is the red bar in the middle?</p>
-<p>We are trying to squeeze 10,000 numbers into a relatively small rectangle, so each bar is actually very thin. The thin red bar is drowning among thousands of blue bars. In order to make it stand out we shall have to change not only the color, but also the width of the bar representing the median. We'll do that using the <code>width</code> option of the <code>bar</code> function.</p>
+<p>OK, tani, ku është shiriti i kuq në mes?</p>
+<p>Ne po mundohemi të shtrydhim 10,000 numra në një drejtkëndësh relativisht të vogël, kështu që çdo bar është në të vërtetë shumë i hollë. Shiriti i kuq i hollë po mbytet midis mijëra shiritave blu. Në mënyrë që ta bëjmë atë të qëndrojë duhet të ndryshojmë jo vetëm ngjyrën, por edhe gjerësinë e shiritit që përfaqëson mesataren. Do ta bëjmë atë duke përdorur opsionin <code>width</code> të funksionit <code>bar</code>.</p>
 
 </div>
 </div>
@@ -14264,14 +14232,14 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.5.-Exercises">4.5. Exercises<a class="anchor-link" href="#4.5.-Exercises">&#182;</a></h2>
+<h2 id="4.5.-Ushtrime">4.5. Ushtrime<a class="anchor-link" href="#4.5.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> A book with short stories for children has only 12 pages -- a story per page. These stories are intended for small children, so none of them nas many words: 271, 354, 296, 301, 333, 326, 285, 298, 327, 316, 287 and 314, respectively. What is the average number of words in a story in this book?</p>
+<p><strong>Ushtrimi 1.</strong> Një libër me tregime të shkurtra për fëmijë ka vetëm 12 faqe - një histori për faqe. Këto histori kanë për qëllim për fëmijë të vegjël, kështu që asnjë prej tyre nuk ka shumë fjalë: 271, 354, 296, 301, 333, 326, 285, 298, 327, 316, 287 dhe 314, përkatësisht. Cili është numri mesatar i fjalëve në një histori në këtë libër?</p>
 
 </div>
 </div>
@@ -14279,10 +14247,10 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong></p>
-<p><em>(a)</em> Marko lives in Serbia and goes to school there. He has four marks in Maths: 5, 4, 5 and another mark which is not legible. We know that his average mark in Maths is 4, though. What is the illegible mark?</p>
-<p><em>(b)</em> How many 5's Marko has to get to ensure that his average mark is at least 4.50 (in which case the teacher is forced by the system to give him 5 as the final mark)?</p>
-<p>(Hint: you can solve <em>(a)</em> by hand; to solve <em>(b)</em> add a new cell below this one and play with the <code>average</code> function.)</p>
+<p><strong>Ushtrimi 2.</strong></p>
+<p><em> (a) </em> Marko jeton në Serbi dhe shkon në shkollë atje. Ai ka katër nota në Matematikë: 5, 4, 5 dhe një shenjë tjetër që nuk është e lexueshme. Ne e dimë që nota e tij mesatare në Matematikë është 4, megjithëse. Cila është shenja e palejueshme?</p>
+<p><em> (b) </em> Sa Marko 5 duhet të sigurojë që nota e tij mesatare të jetë së paku 4,50 (në këtë rast mësuesi është i detyruar nga sistemi t’i japë 5 si notën përfundimtare)?</p>
+<p>(Këshillë: ju mund të zgjidhni <em>(a)</em> me dorë; për të zgjidhur <em>(b)</em> shtoni një qelizë të re nën këtë dhe luani me funksionin <code>avarage</code>.)</p>
 
 </div>
 </div>
@@ -14290,10 +14258,10 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> Petar is another student who lives in Serbia. He has several marks in Maths, but definitely less than 10. We know that 25% of his marks in Math are 5, while 12.5% of his Maths' marks are 3.</p>
-<p><em>(a)</em> How many marks does Petar have in Maths?</p>
-<p><em>(b)</em> How many 5's and how many 3's?</p>
-<p><em>(c)</em> What is the average of his Maths' marks if we know for sure that none of them is 1 or 2?</p>
+<p><strong>Ushtrimi 3.</strong> Petar është një tjetër student që jeton në Serbi. Ai ka disa nota në Matematikë, por përfundimisht më pak se 10. Ne e dimë se 25% e notave të tij në Matematikë janë 5, ndërsa 12.5% e notave të tij në Matematikë janë 3.</p>
+<p><em>(a)</em> Sa nota ka Petari në Matematikë?</p>
+<p><em>(b)</em> Sa 5 dhe sa 3?</p>
+<p><em>(c)</em> Cila është mesatarja e notave të Matematikës së tij nëse e dimë me siguri se asnjë prej tyre nuk është 1 ose 2?</p>
 
 </div>
 </div>
@@ -14301,7 +14269,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 4.</strong> Here is the list of Vesna's marks:</p>
+<p><strong>Ushtrimi 4.</strong> Këtu është lista e notace të Vesna:</p>
 
 </div>
 </div>
@@ -14322,7 +14290,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let <code>vesna_average</code> be her average mark:</p>
+<p>Lër <code>vesna_average</code> të jetë nota e saj mesatare:</p>
 
 </div>
 </div>
@@ -14343,7 +14311,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Take a careful look at the following code and then answer the questions below:</p>
+<p>Shikoni me kujdes kodin e mëposhtëm dhe pastaj përgjigjuni pyetjeve më poshtë:</p>
 
 </div>
 </div>
@@ -14393,13 +14361,13 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>What does <code>plt.figure(figsize=(15,7))</code> do?</li>
-<li>What does <code>range</code> do?</li>
-<li>What does <code>legend</code> do? What does it have to do with the option <code>label</code> in functions <code>bar</code> and <code>plot</code>?</li>
-<li>How would you change the size of the chart to make it square?</li>
-<li>How would you change the color of bars to green?</li>
-<li>What is the meaning of the expression <code>[vesna_average] * 10</code> and why do we need it?</li>
-<li>How woud you remove the legend from the chart?</li>
+<li>Çfarë bën <code>plt.figure(figsize=(15,7))</code>?</li>
+<li>Çfarë bën <code>range</code>?</li>
+<li>Çfarë bën <code>legend</code>? Çfarë ka të bëjë me opsionin <code>label</code> në funksionet  <code>bar</code> dhe  <code>plot</code>?</li>
+<li>Si do ta ndryshonit madhësinë e grafikut për ta bërë atë katror?</li>
+<li>Si do ta ndryshonit ngjyrën e shiritave në të gjelbër?</li>
+<li>Cili është kuptimi i shprehjes <code>[vesna_aaker] * 10</code> dhe pse na duhet?</li>
+<li>Sa e larguar ju e hiqni legjendën nga tabela?</li>
 </ol>
 
 </div>
@@ -14408,7 +14376,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 5.</strong> Create a chart with Petar's marks (the guy from Exercise 3) so that his marks are displayed as blue bars, his average mark is displayed as a red line, and the median mark is displayed as a green bar. The chart should have a legend.</p>
+<p><strong>Exercise 5.</strong> Krijoni një tabelë me shenjat e Petarit (djalë nga Ushtrimi 3) në mënyrë që notat e tij të shfaqen si shirita blu, nota e tij mesatare shfaqet si një vijë e kuqe, dhe nota mesatare shfaqet si shirit i gjelbër. Grafiku duhet të ketë një legjendë.</p>
 
 </div>
 </div>
@@ -14416,7 +14384,7 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 6.</strong> The first ten places on the ATP list on July 21st, 2109 look like this:</p>
+<p><strong>Ushtrimi 6.</strong> Dhjetë vendet e para në listën e ATP më 21 korrik 2109 janë këta:</p>
 
 </div>
 </div>
@@ -14438,18 +14406,14 @@ $$<p>So, let's filter out the salaries that are above the average:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(a)</em> Visualuze this using a bar chart. Display the average of their points by a red line.</p>
-<p><em>(b)</em> How many of the top ten tennis players are above the average?</p>
+<p><em> (a) </em> Vizualizoni këtë duke përdorur një tabelë. Shfaq mesataren e pikëve të tyre me një vijë të kuqe.</p>
+<p><em> (b) </em> Sa nga dhjetë tenistët më të mirë janë mbi mesataren?</p>
 
 </div>
 </div>
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  

@@ -13073,15 +13073,15 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-        
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.-Bar-charts-and-colors">3. Bar charts and colors<a class="anchor-link" href="#3.-Bar-charts-and-colors">&#182;</a></h1><p>In this lecture we demonstrate:</p>
+<h1 id="3.-Grafik&#235;t-dhe-ngjyrat">3. Grafik&#235;t dhe ngjyrat<a class="anchor-link" href="#3.-Grafik&#235;t-dhe-ngjyrat">&#182;</a></h1><p>Në këtë leksion ne demonstrojmë:</p>
 <ol>
-<li>another way to move cells around a Jupyter notebook;</li>
-<li>how to visualize data using bar charts; and</li>
-<li>how to use colors in charts.</li>
+<li>një mënyrë tjetër për të lëvizur qelizat rreth një fJpyter notebook;</li>
+<li>si të vizualizoni të dhënat duke përdorur tabelat; dhe</li>
+<li>si të përdorni ngjyrat në grafikë.</li>
 </ol>
 
 </div>
@@ -13090,39 +13090,39 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.1.-A-bit-more-about-Jupyter-notebooks">3.1. A bit more about Jupyter notebooks<a class="anchor-link" href="#3.1.-A-bit-more-about-Jupyter-notebooks">&#182;</a></h2>
+<h2 id="3.1.-Pak-m&#235;-shum&#235;-rreth-Jupyter-notebook">3.1. Pak m&#235; shum&#235; rreth Jupyter notebook<a class="anchor-link" href="#3.1.-Pak-m&#235;-shum&#235;-rreth-Jupyter-notebook">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We have already on a few occasions said that each Jupyter notebook is a sequence of cells, and each cell can contain some text, an expression, or a Python program. Buttons at the top of the page make it possible for you to manipulate cells. We have already used the following buttons:</p>
+<p>Ne kemi thënë në disa raste që secila Jupyter notebook është një sekuencë qelizash, dhe secila qelizë mund të përmbajë ndonjë tekst, një shprehje ose një program Python. Butonat në krye të faqes ju mundësojnë manipulimin e qelizave. Ne kemi përdorur tashmë butonat e mëposhtëm:</p>
 <ul>
-<li><strong>Run</strong> which runs a cell,</li>
-<li>the dskette which saves the notebook,</li>
-<li><strong>+</strong> which adds a new cell below the active cell, and</li>
-<li>up and down arrows which move the active cell.</li>
+<li><strong> Run </strong> që drejton një qelizë,</li>
+<li>dskette e cila kursen notebook,</li>
+<li><strong> + </strong> i cili shton një qelizë të re poshtë qelizës aktive, dhe</li>
+<li>shigjetat lart dhe poshtë që lëvizin qelizën aktive.</li>
 </ul>
-<p>The following three buttons:</p>
+<p>Tre butonat e mëposhtëm:</p>
 <p><img src="pics/JupyterMenuCutCopyPaste.jpg" alt="Three more buttons"></p>
-<p>perform the usual actions <em>cut</em> (cut the cell from the notebook and memorize it, button that looks like scissors), <em>copy</em> (leave the cell in the notebook but memorize a copy of it, button that looks loke two sheets of paper) and <em>paste</em> (insert the memorized cell, button that looks like placing a sheet of paper onto a clipboard).</p>
-<p>If you wish <strong>move a cell:</strong></p>
+<p>kryeni veprimet e zakonshme <em>cut</em>  (presin qelizën nga notebook dhe mësojini përmendsh, butoni që duket si gërshërë), <em>copy</em> (lë qelizën në notebook, por memorizon një kopje të saj, butoni që duket si dy fletë letre) dhe <em>paste</em> ( vendosni qelizën e memorizuar, butonin që duket sikur vendosni një fletë letre në një copë dërrasë).</p>
+<p>Nëse dëshironi <strong>lëvizni një qelizë:</strong></p>
 <ol>
-<li>click on the cell,</li>
-<li>click the <em>cut</em>  button ("scissors") to remove the cell from the notebook and memorize it,</li>
-<li>click somewhere else in the Jupyter notebook, and finally</li>
-<li>click the <em>paste</em> button ("placing a sheet of paper onto a clipboard") to insert the memorized cell.</li>
+<li>klikoni në qelizë,</li>
+<li>klikoni në butonin <em> cut</em> ("gërshërë") për të hequr qelizën nga notebook dhe për të memorizuar,</li>
+<li>klikoni diku tjetër në Jupyter notebook, dhe në fund</li>
+<li>klikoni në butonin <em>paste</em> ("vendosja e një fletë letre në një copë dërrasë") për të futur qelizën e memorizuar.</li>
 </ol>
-<p>This operation is briefly called <em>cut/paste</em>.</p>
-<p>If you wish <strong>make a copy of a cell:</strong></p>
+<p>Ky operacion quhet shkurtimisht <em>cut / paste</em>.</p>
+<p>Nëse dëshironi <strong>bëni një kopje të një qelize:</strong></p>
 <ol>
-<li>click on the cell,</li>
-<li>click the <em>copy</em>  button ("two sheets of paper") to memorize the cell,</li>
-<li>click somewhere else in the Jupyter notebook, and finally</li>
-<li>click the <em>paste</em> button ("placing a sheet of paper onto a clipboard") to insert the memorized cell.</li>
+<li>klikoni në qelizë,</li>
+<li>klikoni në butonin <em>copy</em> ("dy fletë letre") për të mësuar përmendësh qelizën,</li>
+<li>klikoni diku tjetër në Jupyter notebook, dhe në fund</li>
+<li>klikoni në butonin <em>paste</em> ("vendosja e një fletë letre në një dosje") për të futur qelizën e memorizuar.</li>
 </ol>
-<p>This operation is briefly called <em>copy/paste</em>.</p>
+<p>Ky operacion quhet shkurtimisht <em>copy / paste</em>.</p>
 
 </div>
 </div>
@@ -13130,15 +13130,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.2.-Bar-charts">3.2. Bar charts<a class="anchor-link" href="#3.2.-Bar-charts">&#182;</a></h2>
+<h2 id="3.2.-Grafiku-bar">3.2. Grafiku bar<a class="anchor-link" href="#3.2.-Grafiku-bar">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Quite often it is more convenient to represent data by a sequence of bars instead of by a continuous line. Such charts are called <em>bar charts</em> (for obvious reasons).</p>
-<p>Let us first import the library:</p>
+<p>Shpesh është më e përshtatshme të përfaqësosh të dhënat me një sekuencë të kolonave në vend të një linje të vazhdueshme. Listat e tilla quhen grafikët <em>bar charts</em> (për arsye të dukshme).</p>
+<p>Le të importojmë së pari librarinë:</p>
 
 </div>
 </div>
@@ -13159,8 +13159,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After the import, the library is available in the notebook and there is no need to import it again. However, the import pertains to this notebook only.</p>
-<p>Assume that a these are the marks of a student:</p>
+<p>Pas importit, libraria është në dispozicion në notebook dhe nuk ka nevojë të importohet përsëri. Sidoqoftë, importi ka të bëjë vetëm me këtë notebook.</p>
+<p>Supozoni se këto janë shenjat e një studenti:</p>
 <table>
 <thead><tr>
 <th>Subject</th>
@@ -13198,7 +13198,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>We'll represent the data in terms of two lists like this:</p>
+<p>Ne do t'i përfaqësojmë të dhënat për sa i përket dy listave si kjo:</p>
 
 </div>
 </div>
@@ -13220,7 +13220,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The function <code>bar</code> can be invoked to represent these data in the form of a bar chart:</p>
+<p>Funksioni <code>bar</code> mund të thirret për të përfaqësuar këto të dhëna në formën e një tabelë bar:</p>
 
 </div>
 </div>
@@ -13266,7 +13266,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you wish to resize the chart you can invoke the function <code>figure</code> with its parameter <code>figuresize</code> like this:</p>
+<p>Nëse dëshironi të ndryshoni madhësinë e grafikut, ju mund të thërrisni funksionin <code>figure</code> me parametrin e tij<code>figureize</code> si kjo:</p>
 
 </div>
 </div>
@@ -13313,7 +13313,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <code>pyplot</code> library assigns colors to charts the way it finds appropriate. If we wish to change the color of a chart we can simply request another color by throwing in the <code>color</code> parameter as follows:</p>
+<p>Libraria <code>pyplot</code> cakton ngjyra për të renditur mënyrën se si e gjen të përshtatshme. Nëse dëshirojmë të ndryshojmë ngjyrën e një tabele, thjesht mund të kërkojmë një ngjyrë tjetër, duke hedhur në parametrin "color" si më poshtë:</p>
 
 </div>
 </div>
@@ -13360,7 +13360,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The chart is now green ("g" = <em>green</em>). We have the following colors at our disposal:</p>
+<p>Grafiku tani është jeshil ("g" = <em>green</em>). Ne kemi në dispozicion ngjyrat e mëposhtme:</p>
 <table>
 <thead><tr>
 <th>Letter</th>
@@ -13416,7 +13416,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>"Normal body temperature" is actually an interval of temperatures that changes with the age og the person. When measured in the armpit the interval of temperatures that is considered normal for an age is given the this table:</p>
+<p>"Temperatura normale e trupit" është në të vërtetë një interval i temperaturave që ndryshon me moshën e personit. Kur matet në sqetull intervalin e temperaturave që konsiderohet normale për një moshë, jepet kjo tabelë:</p>
 <table>
 <thead><tr>
 <th>Age</th>
@@ -13442,7 +13442,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>The data can be represented as three lists:</p>
+<p>Të dhënat mund të përfaqësohen si tre lista:</p>
 
 </div>
 </div>
@@ -13465,7 +13465,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We shall visualize this situation on the same chart by invoking <code>bar</code> twice:</p>
+<p>Ne do ta vizualizojmë këtë situatë në të njëjtën grafik duke thirrur "bar" dy herë:</p>
 
 </div>
 </div>
@@ -13514,8 +13514,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Functions <code>xlabel</code> and <code>ylabel</code> add additional explanations to the $x$- and $y$-axis.</p>
-<p>Unfortunately, this chart is not very informative because the intervals we are trying to depict are relatively small. Since we would like to focus on <em>intervals</em> of temperatures we can limit the range ov values that are represented by the $y$-axis. In this case, using the <code>ylim</code> ($y$-limits) function we are going to limit the range of the temperatures displayed to the interval $34-39^\circ C$.</p>
+<p>Funksionet <code>xlabel</code> dhe<code>ylabel</code> shtojnë shpjegime shtesë në $ x $ - dhe $ y $ - $.</p>
+<p>Fatkeqësisht, kjo tabelë nuk është shumë informuese sepse intervalet që po përpiqemi të përshkruajmë janë relativisht të vogla. Meqenëse do të dëshironim të përqendrohemi në <em>intervals</em> të temperaturave mund të kufizojmë vlerat e diapazonit që përfaqësohen nga  $y$-axis. Në këtë rast, duke përdorur funksionin <code>ylim</code> ($y$-limits) ne do të kufizojmë gamën e temperaturave të shfaqura në intervalin  $34-39^\circ C$.</p>
 
 </div>
 </div>
@@ -13565,7 +13565,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note also that the order of the two <code>bar</code> functions matters! The library draws bars representing data in the order in which they appear in the Python code. Since the values in the <code>normalT_hi</code> are greater that the values in <code>normalT_lo</code> the other possible ordering of the <code>bar</code> commands produces the chart in which the higher values are painted over the lower ones, which is not what we had in mind:</p>
+<p>Vini re gjithashtu që renditja e dy funksioneve të barit ka rëndësi! Libraria tërheq bare që paraqesin të dhëna sipas rendit në të cilën ato paraqiten në kodin Python. Meqenëse vlerat në normalT_hi janë më të mëdha se vlerat në normalT_lo renditja tjetër e mundshme e shiritave të komandave prodhon grafikun në të cilin shfaqen vlerat më të larta mbi ato më të ulëtat, që nuk është ajo që kishim në mendje:</p>
 
 </div>
 </div>
@@ -13615,7 +13615,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Therefore, we draw higher values first, and then paint the lover values over them:</p>
+<p>Prandaj, ne tërheqim vlera më të larta së pari, dhe pastaj pikturojmë vlerat e dashura mbi to:</p>
 
 </div>
 </div>
@@ -13665,7 +13665,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For those who did not spend all this time to produce the diagram it may be unclear which values are represented by which color. This is why it is possible to add a legend to the chart. To do so, each <code>bar</code> command gets and extra parameter of the form <code>label="explanation"</code> which provides a short explaination of what data are presented by the diagram. The function <code>legend</code> at the end puts a legend in one of the corners of the chart:</p>
+<p>Për ata që nuk e kaluan gjithë këtë kohë për të prodhuar diagramin mund të jetë e paqartë se cilat vlera përfaqësohen nga cila ngjyrë. Kjo është arsyeja pse është e mundur të shtoni një legjendë në tabelë. Për ta bërë këtë, çdo komandë <code>bar</code> merr dhe një parametër shtesë të formës <code>label = "shpjegim"</code>, i cili ofron një shpjegim të shkurtër të asaj që të dhënat paraqiten nga diagrama. Funksioni <code>legend</code> në fund vendos një legjendë në një nga qoshet e grafikut:</p>
 
 </div>
 </div>
@@ -13716,14 +13716,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.4.-Exercises">3.4. Exercises<a class="anchor-link" href="#3.4.-Exercises">&#182;</a></h2>
+<h2 id="3.4.-Ushtrime">3.4. Ushtrime<a class="anchor-link" href="#3.4.-Ushtrime">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 1.</strong> Look at the code carefully and then answer the questions:</p>
+<p><strong>Ushtrimi 1.</strong> Shikoni kodin me kujdes dhe pastaj përgjigjuni pyetjeve:</p>
 
 </div>
 </div>
@@ -13776,12 +13776,12 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>What does the function <code>bar</code> do?</li>
-<li>What happens if we swap the two lines of code containing the <code>bar</code> functions?</li>
-<li>What does the function <code>xlabel</code> do?</li>
-<li>What do the functions <code>ylim</code> and <code>legend</code> do?</li>
-<li>How would you change the size of this chart?</li>
-<li>How would you change the color of bars to green and yellow?</li>
+<li>Çfarë bën funksioni <code>bar</code>?</li>
+<li>Çarë ndodh nëse këmbejmë dy rreshtat e kodit që përmbajnë funksionet <code>bar</code>?</li>
+<li>Çarë bën funksioni <code>xlabel</code>?</li>
+<li>Çarë bëjnë funksionet <code>ylim</code> dhe<code>legend</code>?</li>
+<li>Si do ta ndryshonit madhësinë e kësaj grafike?</li>
+<li>Si do ta ndryshoni ngjyrën e shufrave në të gjelbër dhe të verdhë?</li>
 </ol>
 
 </div>
@@ -13790,7 +13790,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 2.</strong> The first ten places on the ATP list on July 21st, 2109 look like this:</p>
+<p><strong>Ushtrimi 2.</strong> Dhjetë vendet e para në listën e ATP më 21 korrik 2109 duken kështu:</p>
 
 </div>
 </div>
@@ -13812,7 +13812,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Visualize this by a bar chart.</p>
+<p>Vizualizoni këtë me një bar chart.</p>
 
 </div>
 </div>
@@ -13820,7 +13820,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 3.</strong> The biologists have up to now classified more than 2,000,000 species of living beings. They are all divided into five kingdoms and the approximate number of species per kingdom is given in this table:</p>
+<p><strong>Ushtrimi 3.</strong> Biologët deri më tani kanë klasifikuar më shumë se 2,000,000 lloje të qenieve të gjalla. Të gjitha ato janë të ndara në pesë mbretëri dhe numri i përafërt i specieve për mbretëri është dhënë në këtë tabelë:</p>
 <table>
 <thead><tr>
 <th>Kingdom</th>
@@ -13850,7 +13850,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>Visualize this data by a bar chart.</p>
+<p>Vizualizoni këto të dhëna me një bar chart.</p>
 
 </div>
 </div>
@@ -13858,7 +13858,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 4.</strong> The following table summarizes the highest and the lowest recorded temperatures (in $^\circ$C) on each of the continents:</p>
+<p><strong>Ushtrimi 4.</strong> Tabela e mëposhtme përmbledh temperaturat më të larta dhe më të ulëta të regjistruara (në $^\circ$C) për çdo kontinet:</p>
 <table>
 <thead><tr>
 <th>Continent:</th>
@@ -13894,7 +13894,7 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<p>Visualize the data on the same chart. Use red bars to display highest recorded temperatures, and blue bars for the lowest ones.</p>
+<p>Vizualizoni të dhënat në të njëjtën grafik. Përdorni shufra të kuqe për të shfaqur temperaturat më të larta të regjistruara, dhe shufrat blu për ato më të ulëtat.</p>
 
 </div>
 </div>
@@ -13902,9 +13902,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 5.</strong></p>
-<p><em>(a)</em> Search the Internetu to find out what does the function <code>barh</code> from the library <code>matplotlib</code> do.</p>
-<p><em>(b)</em> Solve Exercise 4 using the barh function.</p>
+<p><strong>Ushtrimi 5. </strong></p>
+<p><em>(a)</em> Kërkoni në Internet për të zbuluar se çfarë bën funksioni <code>barh</code> nga libraria<code>matplotlib</code>.</p>
+<p><em>(b)</em> Zgjidhni ushtrimin 4 duke përdorur funksionin barh.</p>
 
 </div>
 </div>
@@ -13914,7 +13914,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -13925,9 +13925,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Exercise 6*.</strong> It is estimated that on July 1st, 2019 the population of China was 1,420,062,022 and the population of India was 1,368,737,513. It is also estimated that the population of China increases by 0.35% per year, while the population of India increases by 1.08% per year.</p>
-<p><em>(a)</em> Assuming that the rate of increase of the population of both countries is not going to change in near future visualize the population of China and India in the following ten years on the same chart using the <code>plot</code> function.</p>
-<p><em>(b)</em> Read from the chart in which year is India going to overtake China as the most populated country on the Earth.</p>
+<p><strong>Ushtrimi 6.</strong> Është llogaritur se më 1 korrik 2019 popullsia e Kinës ishte 1,420,062,022 dhe popullsia e Indisë ishte 1,368,737,513. Është vlerësuar gjithashtu se popullsia e Kinës rritet me 0.35% në vit, ndërsa popullsia e Indisë rritet me 1.08% në vit.</p>
+<p><em>(a)</em> Duke supozuar se shkalla e rritjes së popullsisë së të dy vendeve nuk do të ndryshojë në të ardhmen e afërt vizualizoni popullsinë e Kinës dhe Indisë në dhjetë vitet e ardhshme në të njëjtën grafik duke përdorur funksionin 'plot'.</p>
+<p><em>(b)</em> Lexoni nga grafiku në cilin vit India do të kalojë Kinën si vendi më i populluar në Tokë.</p>
 
 </div>
 </div>
@@ -13937,7 +13937,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -13946,11 +13946,7 @@ div#notebook {
 
 </div>
     </div>
-    <div class="container">
-        <span class="pull-left" style="margin:5px">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-        </div>
-    </div>
+  </div>
 </body>
 
  
